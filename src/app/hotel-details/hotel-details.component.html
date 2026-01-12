@@ -1,0 +1,217 @@
+<app-navbar></app-navbar>
+<div *ngFor="let x of HotelDetails">
+    <div class="d-flex">
+        <div class="w-75 p-0 rounded">
+            <div class=" d-flex flex-row">
+                <div class="main-image m-1" style="background: url({{x.main_headin_img}}); background-size: cover;">
+
+                </div>
+                <div class="w-50 d-flex flex-wrap">
+                    <div class="all-images m-1" *ngFor="let i of x.photos" style="background: url({{i}});  height: 150px;
+    background-size: cover;
+    width: 48%;
+    border-radius: 20px;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card m-2">
+                <ul class="hotel-details-options">
+                    <li>Overview</li>
+                    <li>Rooms</li>
+                    <li>Facilities</li>
+                    <li>Reviews</li>
+                    <li>Location</li>
+                    <li>Policies</li>
+                </ul>
+            </div>
+            <div class="card m-2">
+                <h5 class="m-3">Highlights</h5>
+                <ul class="hotel-details-options">
+                    <div class="text-center w-25">
+                        <img src="https://cdn6.agoda.net/images/property/highlights/SafetyFeatures.svg" alt="">
+                        <li>Hygiene Plus</li>
+                    </div>
+                    <div class="text-center w-25">
+                        <img src="https://cdn6.agoda.net/images/property/highlights/bus.svg" alt="">
+                        <li>920 meters to public transportation </li>
+                    </div>
+
+                    <div class="text-center w-25">
+                        <img src="https://cdn6.agoda.net/images/property/highlights/door.svg" alt="">
+                        <li>Front desk [24-hour]</li>
+                    </div>
+                    <div class="text-center w-25">
+                        <img src="https://cdn6.agoda.net/images/property/highlights/transfer.svg" alt="">
+                        <li>Airport transfer</li>
+                    </div>
+                    <div class="text-center w-25">
+                        <img src="https://cdn6.agoda.net/images/property/highlights/croissant.svg" alt="">
+                        <li>Great Breakfast</li>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="card m-2">
+                <h5 class="m-3">Facilities</h5>
+                <ul class="hotel-details-options flex-wrap">
+                    <li *ngFor="let f of x.facilities">{{f}}</li>
+                </ul>
+            </div>
+            <div class="card m-2">
+                <h5 class="m-3">About Us</h5>
+                <div class="hotel-details-options about-us">
+                    {{x.about_us}}
+                </div>
+            </div>
+        </div>
+        <div class="card w-25">
+            <div class="d-flex">
+                <div class="Average-Rating-logo">
+                    <h2 class="text-white">{{x.average_rating | number : '1.1-1'}}</h2>
+                </div>
+                <div>
+                    <h4 class="mt-2">Very Good</h4>
+                    <p>{{getTotalRating()}} ratings, {{UserReviews.length}} reviews</p>
+                </div>
+            </div>
+            <!-- <div class="m-2">
+            <label for="file" class="me-2">Excellent</label>
+            <progress id="file" class="ms-2" value="32" max="100"> 32% </progress>
+        </div>
+        <div class="m-2">
+            <label for="file" class="me-2">Very Good</label>
+            <progress id="file" class="ms-2" value="32" max="100"> 32% </progress>
+        </div>
+        <div class="m-2">
+            <label for="file" class="me-2">Average</label>
+            <progress id="file" class="ms-2" value="32" max="100"> 32% </progress>
+        </div>
+        <div class="m-2">
+            <label for="file" class="me-2">Poor</label>
+            <progress id="file" class="ms-2" value="32" max="100"> 32% </progress>
+        </div>
+        <div class="m-2">
+            <label for="file" class="me-2">Bad</label>
+            <progress id="file" class="ms-2" value="32" max="100"> 32% </progress>
+        </div> -->
+
+            <table class="m-2">
+                <tr>
+                    <td><label class="fs-5" for="file">Excellent</label></td>
+                    <td><progress id="file" [value]="getEachStarAvg(5) | number : '1.0-0'" max="100"></progress><span class="m-2 fs-5">{{getEachStarAvg(5)}}%</span></td>
+                </tr>
+                <tr>
+                    <td><label class="fs-5" for="file">Very Good</label></td>
+                    <td><progress id="file" [value]="getEachStarAvg(4) | number : '1.0-0'" max="100"></progress><span class="m-2 fs-5">{{getEachStarAvg(4) | number : '1.0-0'}}%</span></td>
+                </tr>
+                <tr>
+                    <td><label class="fs-5" for="file">Average</label></td>
+                    <td><progress id="file" [value]="getEachStarAvg(3) | number : '1.0-0'" max="100"></progress><span class="m-2 fs-5">{{getEachStarAvg(3) | number : '1.0-0'}}%</span></td>
+                </tr>
+                <tr>
+                    <td><label class="fs-5" for="file">Poor</label></td>
+                    <td><progress id="file" [value]="getEachStarAvg(2) | number : '1.0-0'"  max="100"></progress><span class="m-2 fs-5">{{getEachStarAvg(2) | number : '1.0-0'}}%</span></td>
+                </tr>
+                <tr>
+                    <td><label class="fs-5" for="file">Bad</label></td>
+                    <td><progress id="file" [value]="getEachStarAvg(1) | number : '1.0-0'" max="100"></progress><span class="m-2 fs-5">{{getEachStarAvg(2) | number : '1.0-0'}}%</span></td>
+                </tr>
+            </table>
+            <div>
+                <div id="map" style="width: 100%; height: 400px; border-radius: 10px;"></div>
+
+            </div>
+            <button class="btn btn-primary my-3" (click)="GotoPayment()">Book Hotel</button>
+        </div>
+
+    </div>
+</div>
+<div class="w-100">
+    <div class="d-flex review-head w-75 m-1 p-3">
+        <h1>User Reviews</h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Review</button>
+    </div>
+
+    <div class="w-75">
+        <div class="card m-2" *ngFor="let r of UserReviews">
+            <div class="m-2 mt-3 d-flex">
+                <h5 class="card review-rating-logo">{{r.rating}}</h5>
+                <div class="ms-3">
+                    <h5 *ngIf="r.rating == 5">Excellent Stay</h5>
+                    <h5 *ngIf="r.rating == 4">Very Good Stay</h5>
+                    <h5 *ngIf="r.rating == 3">Average Stay</h5>
+                    <h5 *ngIf="r.rating == 2">Poor Stay</h5>
+                    <h5 *ngIf="r.rating == 1">Bad Stay</h5>
+                    <p>{{r.userName}}</p>
+                </div>
+            </div>
+            <div class="ms-2">
+                <p>{{r.detailedReview}}</p>
+            </div>
+            <div class="m-2">
+                <h6>Travel Month : {{r.travelMonth}}</h6>
+                <h6>Room : {{r.roomName}}</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header addreview-header">
+
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <div class="star-rating">
+                        <i class="bi bi-star-fill star m-1" *ngFor="let s of stars; let i = index"
+                            [class.filled]="i < rating" (click)="setRating(i + 1)">
+                        </i>
+                    </div>
+                </div>
+                <div class="">
+                    <form [formGroup]="ReviewForm">
+                        <div>
+                            <label for="Uname">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" name="Uname" id="Uname" formControlName="Uname"
+                                placeholder="Enter the Username">
+                        </div>
+                        <div>
+                            <label for="room">Room Name</label>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" name="room" id="room" formControlName="room"
+                                placeholder="Enter the Room Name">
+                        </div>
+                        <div>
+                            <label for="travel_month">Travel Month</label>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" name="travel_month" id="travel_month"
+                                formControlName="travel_month">
+                        </div>
+                        <div>
+                            <label for="review_text">Detailed Review</label>
+                        </div>
+                        <div>
+                            <textarea class="form-control" name="review_text" id="review_text"
+                                formControlName="review_text"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex">
+                <button type="button" class="btn btn-secondary my-3 me-1 ms-3 w-50"
+                    data-bs-dismiss="modal"(click)="ResetForm()">Close</button>
+                <button type="button" class="btn btn-primary my-3 me-3 w-50" (click)="addReview()" data-bs-dismiss="modal">Add</button>
+            </div>
+        </div>
+    </div>
+</div>

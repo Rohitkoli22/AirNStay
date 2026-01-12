@@ -1,0 +1,214 @@
+<app-navbar></app-navbar>
+<div class="main-body">
+    <div class="container-main">
+        <div class="container-start">
+            <span class="text-white main-heading my-2">Your Journey Starts Here</span>
+            <span class="text-white second-heading my-2">Discover amazing hotels, flights, and vacation packages
+                tailored just for you</span>
+            <div class="search-hotels card">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn-hotels"
+                        [ngStyle]="{ 'background-color': selectedOption === 'hotels' ? 'white' : 'transparent' }"
+                        (click)="selectedOption = 'hotels'">
+                        <i class="bi bi-building m-2"></i> Hotels
+                    </button>
+
+                    <button type="button" class="btn-flights"
+                        [ngStyle]="{ 'background-color': selectedOption === 'flights' ? 'white' : 'transparent' }"
+                        (click)="selectedOption = 'flights'">
+                        <i class="bi bi-airplane m-2"></i> Flights
+                    </button>
+
+                    <button type="button" class="btn-packages"
+                        [ngStyle]="{ 'background-color': selectedOption === 'packages' ? 'white' : 'transparent' }"
+                        (click)="selectedOption = 'packages'">
+                        <i class="bi bi-box-seam m-2"></i> Packages
+                    </button>
+                </div>
+
+
+
+                <form class="search-form" [formGroup]="searchForm" *ngIf="selectedOption === 'hotels'">
+                    <table class="w-100">
+                        <tr>
+                            <td class="w-50 ms-2 pe-3">
+                                <label for="destination">From</label>
+                                <input class="form-control" type="text" id="destination" formControlName="destination"
+                                    placeholder="Where are you going?">
+                            </td>
+                            <td class="w-50 ms-2 ps-3">
+                                <label for="check-in">Check-in</label>
+                                <input class="form-control" type="date" id="check-in" formControlName="checkIn">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w-50 ms-2 pe-3 pt-2">
+                                <label for="check-out">Check-out</label>
+                                <input class="form-control" type="date" id="check-out" formControlName="checkOut">
+                            </td>
+                            <td class="w-50 ms-2 ps-3 pt-2">
+                                <label for="guests">Guests</label>
+                                <input class="form-control" type="number" id="guests" formControlName="guests"
+                                    placeholder="2 adults, 0 children">
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="btn btn-primary w-100 mt-3" (click)="getHotels()">
+                        <i class="bi bi-search pe-2"></i>Search Hotels
+                    </button>
+                </form>
+
+
+                <form class="search-form" [formGroup]="flightsForm" *ngIf="selectedOption === 'flights'">
+                    <table class="w-100">
+                        <tr>
+                            <td class="w-50 ms-2 pe-3">
+                                <label for="departure">From</label>
+                                <input class="form-control" type="text" id="departure" formControlName="departure"
+                                    placeholder="Departure city">
+                            </td>
+                            <td class="w-50 ms-2 ps-3">
+                                <label for="arrival">To</label>
+                                <input class="form-control" type="text" id="arrival" formControlName="arrival"
+                                    placeholder="Arrival city">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w-50 ms-2 pe-3 pt-2">
+                                <label for="departure-date">Departure Date</label>
+                                <input class="form-control" type="date" id="departure-date"
+                                    formControlName="departure-date">
+                            </td>
+                            <td class="w-50 ms-2 ps-3 pt-2">
+                                <label for="passengers">Passengers</label>
+                                <input class="form-control" type="number" id="passengers" formControlName="passengers"
+                                    placeholder="1 Passengers">
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="btn btn-primary w-100 mt-3" (click)="getFlights()">
+                        <i class="bi bi-search pe-2"></i>Search Flights
+                    </button>
+                </form>
+
+
+                <form class="search-form" [formGroup]="packagesForm" *ngIf="selectedOption === 'packages'">
+                    <table class="w-100">
+                        <tr class="w-100">
+                            <td class="w-50 ms-2 pe-1" colspan="2">
+                                <label for="destination">Destination</label>
+                                <input class="form-control" type="text" id="destination" formControlName="destination"
+                                    placeholder="Where do you want to go?">
+                            </td>
+                        </tr>
+                        <tr class="w-100">
+                            <td class="w-50 ms-2 pe-3 pt-2">
+                                <label for="travel-dates">Travel Dates</label>
+                                <input class="form-control" type="date" id="travel-dates"
+                                    formControlName="travel-dates">
+                            </td>
+                            <td class="w-50 ms-2 ps-3 pt-2">
+                                <label for="travelers">Travelers</label>
+                                <input class="form-control" type="number" id="travelers" formControlName="travelers"
+                                    placeholder="Number of travelers">
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="btn btn-primary w-100 mt-3">
+                        <i class="bi bi-search pe-2"></i>Search Hotels
+                    </button>
+                </form>
+            </div>
+
+        </div>
+        <div class="container-middle">
+            <div class="tag-description">
+                <section class="py-5 text-center">
+                    <div class="container">
+                        <div class="section-badge">Why Choose TravelBooker</div>
+                        <h2 class="section-title">Everything You Need for <span>Perfect Travel</span></h2>
+                        <p class="section-text mt-3">
+                            From booking to support, we provide comprehensive travel solutions with cutting-edge
+                            technology and personalized service
+                            for travelers, hotel managers, and travel agents.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="cards-container">
+                <div class="card" routerLink="/hotels">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon-wrapper-hotel">
+                                <i class="bi bi-building"></i>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl my-3 mb-2 font-semibold">Premium Hotels</h3>
+                        <p class="card-text">Choose from thousands of handpicked hotels worldwide</p>
+                    </div>
+                </div>
+                <div class="card" routerLink="/flights">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon-wrapper-flight">
+                                <i class="bi bi-airplane"></i>
+                            </div>
+                        </div>
+
+                        <h5 class="text-xl  my-3 mb-2 font-semibold">Best Flight Deals</h5>
+                        <p class="card-text">Compare and book flights at competitive prices</p>
+                    </div>
+                </div>
+                <div class="card" routerLink="/packages">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon-wrapper-package">
+                                <i class="bi bi-box-seam"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-xl my-3 mb-2 font-semibold">Vacation Packages</h5>
+                        <p class="card-text">Curated packages for unforgettable experiences</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tag-description">
+                <section class="py-5 text-center">
+                    <div class="container">
+                        <div class="section-badge">Popular Destinations</div>
+                        <h2 class="section-title">Explore the World's<span> Most Beautiful Places</span></h2>
+                        <p class="section-text mt-3">
+                            Discover handpicked destinations that offer unforgettable experiences, from tropical
+                            paradises to cultural capitals around the globe.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="cards-container">
+                <div class="card" style="width: 21rem; height: 13rem;">
+                    <div class="card-body first-card">
+                        <h5 class="card-title text-white fs-4">Taj Mahal</h5>
+                    </div>
+                </div>
+                <div class="card" style="width: 21rem; height: 13rem;">
+                    <div class="card-body second-card">
+                        <h5 class="card-title text-white fs-4">Kashmir</h5>
+                    </div>
+                </div>
+                <div class="card" style="width: 21rem; height: 13rem;">
+                    <div class="card-body third-card">
+                        <h5 class="card-title text-white fs-4">Ladakh</h5>
+                    </div>
+                </div>
+                <div class="card" style="width: 21rem; height: 13rem;">
+                    <div class="card-body fourth-card">
+                        <h5 class="card-title text-white fs-4">Delhi</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

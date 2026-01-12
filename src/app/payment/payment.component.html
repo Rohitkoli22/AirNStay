@@ -1,0 +1,539 @@
+<app-navbar></app-navbar>
+<div *ngIf="type == 'hotel'">
+    <div class="d-flex">
+        <div class="container-form">
+
+            <form class="payment w-100" [formGroup]="paymentForm">
+                <h4 class="bookingDetails text-center">Booking Details</h4>
+                <div class="p-3 w-100">
+                    <table class="w-75">
+                        <tr>
+                            <td><label for="fname">First Name</label></td>
+                            <td><label for="lname">Last Name</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="form-control" name="fname" id="fname" formControlName="fname"
+                                    placeholder="First Name"></td>
+                            <td><input type="text" class="form-control" name="lname" id="lname" formControlName="lname"
+                                    placeholder="Last Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <label class="mt-3" for="email">Email</label>
+                        </tr>
+                        <tr class="">
+                            <td><input type="text" class="form-control" name="email" id="email" formControlName="email"
+                                    placeholder="ex:myname@example.com"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label class="mt-3" for="roomtype">Room Type</label></td>
+                        </tr>
+                        <tr>
+                            <select class="form-control " name="roomtype" id="roomtype" formControlName="roomtype">
+                                <option value="Please Select">Please Select</option>
+                                <option value="Standard Room">Standard Room</option>
+                                <option value="Family Room">Family Room</option>
+                                <option value="Mix Dorm Room">Mix Dorm Room</option>
+                            </select>
+                        </tr>
+                        <tr>
+                            <td><label class="mt-3" for="NoGuest">Number of Guests</label></td>
+                            <td><label class="mt-3" for="NoRooms">Number of Rooms</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-control  d-flex  m-0 p-0">
+                                    <button class="btn-Dec" id="decrement" (click)="GuestDec()">-</button>
+                                    <input type="number" class="No-Guest" name="NoGuest" id="NoGuest"
+                                        [value]="guestCount" formControlName="NoGuest">
+                                    <button class="btn-Inc" id="increment" (click)="GuestInc()">+</button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-control d-flex m-0 p-0">
+                                    <button class="btn-Dec" id="decrement" (click)="RoomDec()">-</button>
+                                    <input type="number" class="No-Guest" name="NoRooms" id="NoGuest"
+                                        [value]="roomCount" formControlName="NoRooms">
+                                    <button class="btn-Inc" id="increment" (click)="RoomInc()">+</button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label class="mt-3" for="check_in">Check-In Date</label></td>
+                            <td><label class="mt-3" for="check_out">Check-Out Date</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="date" class="form-control " name="check_in" id="check_in"
+                                    formControlName="check_in"></td>
+                            <td><input type="date" class="form-control " name="check_out" id="check_out"
+                                    formControlName="check_out"></td>
+                        </tr>
+
+
+                    </table>
+
+
+                    <div class="my-4 w-75">
+                        <h5>* Credit Card Information</h5>
+                        <div class="w-100">
+                            <table class="w-100  my-3">
+                                <tr>
+                                    <td><label class="mb-3" for="cardUname">Name on Card</label></td>
+                                    <td><input class="form-control mb-3" type="text" name="cardUname" id="cardUname" formControlName="cardUname">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label class="mb-3" for="cardNo">Card Number</label></td>
+                                    <td><input class="form-control mb-3" type="number" name="cardNo" id="cardNo" formControlName="cardNo"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="mb-3" for="cardEmail">Email</label></td>
+                                    <td><input class="form-control mb-3" type="text" name="cardEmail" id="cardEmail" formControlName="cardEmail">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label class="mb-3" for="expDate">Expiration Date</label></td>
+                                    <td><input class="form-control mb-3" type="date" name="expDate" id="expDate" formControlName="expDate"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="mb-3" for="code">Security Code</label></td>
+                                    <td><input class="form-control mb-3" type="number" name="code" id="code" formControlName="code"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="conatiner-BillSummary">
+            <h4 class="billSummary text-center">Bill Summary</h4>
+            <div class="p-3">
+                <h5>* Summary</h5>
+                <div class="my-3 w-100">
+                    <table class="w-100 my-3">
+                        <tr>
+                            <td><label class="my-2">Rooms</label></td>
+                            <td><label class="my-2">{{roomCount}}</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Price per night</label></td>
+                            <td><label class="my-2">${{perNightPrice}}</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Check In</label></td>
+                            <td><label class="my-2">{{checkIn}}</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Check Out</label></td>
+                            <td><label class="my-2">{{checkOut}}</label></td>
+                        </tr>
+                    </table>
+                </div>
+                <h5 class="my-4">* Charges</h5>
+                <div class="my-3 w-100">
+                    <table class="w-100">
+                        <tr>
+                            <td><label class="my-2">{{getDaysBetweenDates()}} Nights</label></td>
+                            <td><label class="my-2">Single Room</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">VAT</label></td>
+                            <td><label class="my-2">10%</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Fees</label></td>
+                            <td><label class="my-2">Included</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Total</label></td>
+                            <td><label class="my-2">${{total}}</label></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+            <hr>
+            <div class="p-3">
+                <h5>* Accept and Confirm</h5>
+                <div class="p-2">
+                    <input type="checkbox" class="mx-2" name="bookingCondition" id="bookingCondition">
+                    <label for="bookingCondition">I agree to the booking conditions</label>
+                </div>
+                <div class="p-4">
+                    <table class="w-75 text-center">
+                        <tr>
+                            <td><label class="me-1" for="Total">Grand Total:</label></td>
+                            <td><label><span class="fs-3">${{total}}</span></label></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="text-center p-1">
+                    <button class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" (click)="addBooking()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div *ngIf="type == 'flight'">
+    <div class="d-flex">
+        <div class="container-form">
+
+            <form class="payment w-100" [formGroup]="paymentForm">
+                <h4 class="bookingDetails text-center">Booking Details</h4>
+                <div class="p-3 w-100">
+                    <table class="w-75">
+                        <tr>
+                            <td><label for="fname">First Name</label></td>
+                            <td><label for="lname">Last Name</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="form-control" name="fname" id="fname" formControlName="fname"
+                                    placeholder="First Name"></td>
+                            <td><input type="text" class="form-control" name="lname" id="lname" formControlName="lname"
+                                    placeholder="Last Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <label class="mt-3" for="email">Email</label>
+                        </tr>
+                        <tr class="">
+                            <td><input type="text" class="form-control" name="email" id="email" formControlName="email"
+                                    placeholder="ex:myname@example.com"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label class="mt-3" for="NoGuest">Number of Adults</label></td>
+                            <td><label class="mt-3" for="NoRooms">Number of Childs</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-control  d-flex  m-0 p-0">
+                                    <button class="btn-Dec" id="decrement" (click)="GuestDec()">-</button>
+                                    <input type="number" class="No-Guest" name="NoGuest" id="NoGuest"
+                                        [value]="guestCount" formControlName="NoGuest">
+                                    <button class="btn-Inc" id="increment" (click)="GuestInc()">+</button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-control d-flex m-0 p-0">
+                                    <button class="btn-Dec" id="decrement" (click)="RoomDec()">-</button>
+                                    <input type="number" class="No-Guest" name="NoRooms" id="NoGuest"
+                                        [value]="roomCount" formControlName="NoRooms">
+                                    <button class="btn-Inc" id="increment" (click)="RoomInc()">+</button>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </table>
+
+
+                    <div class="my-4 w-75">
+                        <h5>* Credit Card Information</h5>
+                        <div class="w-100">
+                            <table class="w-100  my-3">
+                                <tr>
+                                    <td><label class="mb-3" for="cardUname">Name on Card</label></td>
+                                    <td><input class="form-control mb-3" type="text" name="cardUname" id="cardUname" formControlName="cardUname">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label class="mb-3" for="cardNo">Card Number</label></td>
+                                    <td><input class="form-control mb-3" type="number" name="cardNo" id="cardNo" formControlName="cardNo"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="mb-3" for="cardEmail">Email</label></td>
+                                    <td><input class="form-control mb-3" type="text" name="cardEmail" id="cardEmail" formControlName="cardEmail">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label class="mb-3" for="expDate">Expiration Date</label></td>
+                                    <td><input class="form-control mb-3" type="date" name="expDate" id="expDate" formControlName="expDate"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="mb-3" for="code">Security Code</label></td>
+                                    <td><input class="form-control mb-3" type="number" name="code" id="code" formControlName="code"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="conatiner-BillSummary">
+            <h4 class="billSummary text-center">Bill Summary</h4>
+            <div class="p-3">
+                <h5>* Summary</h5>
+                <div class="my-3 w-100">
+                    <table class="w-100 my-3">
+                        <tr>
+                            <td><label class="my-2">Flight No:</label></td>
+                            <td><label class="my-2">{{flight_Id}}</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Flight price</label></td>
+                            <td><label class="my-2">${{flight_price}}</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Date</label></td>
+                            <td><label class="my-2">{{flight_date}}</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Number of Adults</label></td>
+                            <td><label class="my-2">{{guestCount}}</label></td>
+                        </tr>
+                         <tr>
+                            <td><label class="my-2">Number of Childs</label></td>
+                            <td><label class="my-2">{{roomCount}}</label></td>
+                        </tr>
+                    </table>
+                </div>
+                <h5 class="my-4">* Charges</h5>
+                <div class="my-3 w-100">
+                    <table class="w-100">
+                        <tr>
+                            <td><label class="my-2">{{guestCount}}</label></td>
+                            <td><label class="my-2">Number of Adults</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">{{roomCount}}</label></td>
+                            <td><label class="my-2">Number of Childs</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Fees</label></td>
+                            <td><label class="my-2">Included</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Total</label></td>
+                            <td><label class="my-2">${{flight_total}}</label></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+            <hr>
+            <div class="p-3">
+                <h5>* Accept and Confirm</h5>
+                <div class="p-2">
+                    <input type="checkbox" class="mx-2" name="bookingCondition" id="bookingCondition">
+                    <label for="bookingCondition">I agree to the booking conditions</label>
+                </div>
+                <div class="p-4">
+                    <table class="w-75 text-center">
+                        <tr>
+                            <td><label class="me-1" for="Total">Grand Total:</label></td>
+                            <td><label><span class="fs-3">${{flight_total}}</span></label></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="text-center p-1">
+                    <button class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" (click)="addFlightBooking()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div *ngIf="type == 'package'">
+    <div class="d-flex">
+        <div class="container-form">
+
+            <form class="payment w-100" [formGroup]="paymentForm">
+                <h4 class="bookingDetails text-center">Booking Details</h4>
+                <div class="p-3 w-100">
+                    <table class="w-75">
+                        <tr>
+                            <td><label for="fname">First Name</label></td>
+                            <td><label for="lname">Last Name</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="form-control" name="fname" id="fname" formControlName="fname"
+                                    placeholder="First Name"></td>
+                            <td><input type="text" class="form-control" name="lname" id="lname" formControlName="lname"
+                                    placeholder="Last Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <label class="mt-3" for="email">Email</label>
+                        </tr>
+                        <tr class="">
+                            <td><input type="text" class="form-control" name="email" id="email" formControlName="email"
+                                    placeholder="ex:myname@example.com"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label class="mt-3" for="NoGuest">Number of Adults</label></td>
+                            <td><label class="mt-3" for="NoRooms">Number of Childs</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-control  d-flex  m-0 p-0">
+                                    <button class="btn-Dec" id="decrement" (click)="GuestDec()">-</button>
+                                    <input type="number" class="No-Guest" name="NoGuest" id="NoGuest"
+                                        [value]="guestCount" formControlName="NoGuest">
+                                    <button class="btn-Inc" id="increment" (click)="GuestInc()">+</button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-control d-flex m-0 p-0">
+                                    <button class="btn-Dec" id="decrement" (click)="RoomDec()">-</button>
+                                    <input type="number" class="No-Guest" name="NoRooms" id="NoGuest"
+                                        [value]="roomCount" formControlName="NoRooms">
+                                    <button class="btn-Inc" id="increment" (click)="RoomInc()">+</button>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </table>
+
+
+                    <div class="my-4 w-75">
+                        <h5>* Credit Card Information</h5>
+                        <div class="w-100">
+                            <table class="w-100  my-3">
+                                <tr>
+                                    <td><label class="mb-3" for="cardUname">Name on Card</label></td>
+                                    <td><input class="form-control mb-3" type="text" name="cardUname" id="cardUname" formControlName="cardUname">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label class="mb-3" for="cardNo">Card Number</label></td>
+                                    <td><input class="form-control mb-3" type="number" name="cardNo" id="cardNo" formControlName="cardNo"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="mb-3" for="cardEmail">Email</label></td>
+                                    <td><input class="form-control mb-3" type="text" name="cardEmail" id="cardEmail" formControlName="cardEmail">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label class="mb-3" for="expDate">Expiration Date</label></td>
+                                    <td><input class="form-control mb-3" type="date" name="expDate" id="expDate" formControlName="expDate"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="mb-3" for="code">Security Code</label></td>
+                                    <td><input class="form-control mb-3" type="number" name="code" id="code" formControlName="code"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="conatiner-BillSummary">
+            <h4 class="billSummary text-center">Bill Summary</h4>
+            <div class="p-3">
+                <h5>* Summary</h5>
+                <div class="my-3 w-100">
+                    <table class="w-100 my-3">
+                        <tr>
+                            <td><label class="my-2">Flight No:</label></td>
+                            <td><label class="my-2">{{flight_Id}}</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Flight price</label></td>
+                            <td><label class="my-2">${{flight_price}}</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Date</label></td>
+                            <td><label class="my-2">{{flight_date}}</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Number of Adults</label></td>
+                            <td><label class="my-2">{{guestCount}}</label></td>
+                        </tr>
+                         <tr>
+                            <td><label class="my-2">Number of Childs</label></td>
+                            <td><label class="my-2">{{roomCount}}</label></td>
+                        </tr>
+                    </table>
+                </div>
+                <h5 class="my-4">* Charges</h5>
+                <div class="my-3 w-100">
+                    <table class="w-100">
+                        <tr>
+                            <td><label class="my-2">{{guestCount}}</label></td>
+                            <td><label class="my-2">Number of Adults</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">{{roomCount}}</label></td>
+                            <td><label class="my-2">Number of Childs</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Fees</label></td>
+                            <td><label class="my-2">Included</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="my-2">Total</label></td>
+                            <td><label class="my-2">${{flight_total}}</label></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+            <hr>
+            <div class="p-3">
+                <h5>* Accept and Confirm</h5>
+                <div class="p-2">
+                    <input type="checkbox" class="mx-2" name="bookingCondition" id="bookingCondition">
+                    <label for="bookingCondition">I agree to the booking conditions</label>
+                </div>
+                <div class="p-4">
+                    <table class="w-75 text-center">
+                        <tr>
+                            <td><label class="me-1" for="Total">Grand Total:</label></td>
+                            <td><label><span class="fs-3">${{flight_total}}</span></label></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="text-center p-1">
+                    <button class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" (click)="addFlightBooking()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+
+
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <svg width="400" height="400">
+                    <circle fill="none" stroke="#68E534" stroke-width="20" cx="200" cy="200" r="190" class="circle"
+                        stroke-linecap="round" transform="rotate(-90 200 200) " />
+                    <polyline fill="none" stroke="#68E534" stroke-width="24" points="88,214 173,284 304,138"
+                        stroke-linecap="round" stroke-linejoin="round" class="tick" />
+                </svg>
+
+                <h2>Payment Success</h2>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Done</button>
+            </div>
+        </div>
+    </div>
+</div>

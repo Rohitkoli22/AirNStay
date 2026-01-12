@@ -1,0 +1,259 @@
+.container-start
+{
+    width: 100%;
+    height:100vh;
+   /* background:linear-gradient(
+    to right,
+    rgba(22, 123, 212, 0.8),
+    rgba(81, 168, 211, 0.2)
+   ), url('/DashboardBg.png'); */
+   background-color: #0d63e5;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   background-size: cover;
+   
+}
+/* .heading-description{
+   background: transparent;
+   width: 40%;
+   margin-left: 10rem;
+} */
+.search-hotels{
+    background: white;
+    width: 45%;
+    padding: 20px;
+   
+}
+
+.main-heading{
+    font-size: 60px;
+    font-weight: 700;
+}
+.second-heading{
+    font-family: system-ui, sans-serif;
+    font-size: 23px;
+    font-weight: 480;
+    opacity: 0.8;
+}
+b{
+    color: orangered;
+}
+
+.search-form{
+    padding: 10px;
+}
+
+.form-control{
+    height: 50px;
+}
+
+
+.discover-heading{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.tagline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.first-tag{
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.tag-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tag-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.second-tag{
+    width: 500px;
+}
+
+.cards-container > .card{
+    width: 26rem; 
+    height: 13rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.section-badge {
+      display: inline-block;
+      padding: 6px 15px;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #333;
+    }
+    .section-title span {
+      color: #0d6efd; 
+    }
+    .section-text {
+      color: #6c757d;
+      max-width: 750px;
+      margin: 0 auto;
+      font-size: 1rem;
+    }
+    .cards-container{
+        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        justify-content: space-evenly;
+    }
+    .card{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 2px;
+        margin-right: 2px;
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+    }
+
+.container-section{
+    border: 1px solid rgba(22, 123, 212, 0.3);
+    width: 1200px;
+    border-radius: 20px;
+}
+
+.btn-group{
+    background-color: aliceblue;
+    /* background-color: white; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px;
+}
+.btn-hotels, .btn-flights, .btn-packages{
+    background-color:transparent;
+    width: 35%  ;
+    height: 30px;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    border: none;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+    /* .btn-hotels:checked {
+        background-color: white;
+    } */
+/* .btn-flights:checked {
+    background-color: white;
+}
+.btn-packages:checked {
+    background-color: white;
+} */
+
+.first-card{
+    background: url('https://www.thoughtco.com/thmb/mvzDYqXzP4T_D7JfMTsWm5GgDZA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sunrise-at-taj-mahal--agra--uttar-pradash--india-583682538-5b91840bc9e77c0050bdc67b.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+}
+
+.second-card{
+    background: url('https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/kashmir.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+}
+.third-card{
+    background: url('https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/ladakh.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+}
+.fourth-card{
+    background: url('https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/Delhi.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+}
+.font-semibold{
+    font-weight: 600;
+}
+.text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.mb-2
+{
+    margin-bottom: .5rem;
+} 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -.025em;
+}
+
+.icon-wrapper-hotel {
+  width: 60px;
+  height: 60px;
+  background-color: #e6f2ff; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper-hotel i {
+  font-size: 28px;
+  color: #1976d2; 
+}
+
+.icon-wrapper-flight {
+  width: 60px;
+  height: 60px;
+  background-color: #e6f2ff; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper-flight i {
+  font-size: 28px;
+  color: #1976d2; 
+}
+
+.icon-wrapper-package {
+  width: 60px;
+  height: 60px;
+  background-color: #e6f2ff; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper-package i {
+  font-size: 28px;
+  color: #1976d2; 
+}
+

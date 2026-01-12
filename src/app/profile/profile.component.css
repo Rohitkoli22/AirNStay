@@ -1,0 +1,196 @@
+*{
+    font-family: system-ui, sans-serif;
+}
+.name-logo{
+    background-color: #006bd6;
+    width: 65px;
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: 10px;
+}
+.name-logo p{
+    margin-top: 10px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.user-info{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.card-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.user-travel-details{
+    display: flex;
+    justify-content: space-between;
+}
+.user-card{
+    width: 24%;
+    height: fit-content;
+    border-radius: 15px;
+}
+.search-hotels{
+    width: fit-content;
+    margin-left: 100px;
+}
+.btn-group{
+    background-color: aliceblue;
+    /* background-color: white; */
+    border-radius: 5px;
+    display: flex;
+    padding: 1px;
+}
+.btn-hotels, .btn-flights, .btn-packages{
+    background-color:transparent;
+    width: fit-content  ;
+    height: 40px;
+    border: none;
+    margin: 3px;
+    border-radius: 10px;
+}
+.card-logo{
+    width: fit-content;
+    
+}
+.user-activity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.font-bold{
+    font-weight: 700;
+}
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -.025em;
+}
+.text-muted-foreground {
+    color: hsl(var(--muted-foreground));
+}
+
+.facility-badges {
+  display: flex;
+  gap: 10px; 
+}
+
+.badge-pill {
+  background-color: hsl(16, 100%, 66%, 1);  
+  color: #fff;
+  padding: 1px 14px;
+  border-radius: 25px;  
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.setting, .logout{
+    border-radius: 10px;
+    border-color: hsl(214, 32%, 91%, 1);
+    border-width: 1px;
+}
+
+.calendar-box {
+  width: 50px;
+  height: 50px;
+  background-color: #e6f2ff;  
+  border-radius: 15px;        
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-box i {
+  font-size: 25px;
+  color: #1976d2; 
+}
+
+.icon-box-airplane {
+  width: 50px;
+  height: 50px;
+  background-color: #e6f2ff;  
+  border-radius: 15px;        
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box-airplane i {
+  font-size: 25px;
+  color: #1976d2;  
+}
+
+.icon-box-dollar {
+    width: 50px;
+    height: 50px;
+    background-color: #e9f3ff; 
+    border-radius: 15px;       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box-dollar i {
+    font-size: 25px;
+    color: #0d6efd; 
+}
+
+.icon-box-star {
+    width: 50px;
+    height: 50px;
+    background-color: #e9f3ff; 
+    border-radius: 15px;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box-star i {
+    font-size: 25px;
+    color: #0d6efd;  
+}
+
+.icon-box-building {
+    width: 50px;
+    height: 50px;
+    background-color: #e9f3ff; 
+    border-radius: 15px;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box-building i {
+    font-size: 25px;
+    color: #0d6efd;  
+}
+.icon-box-box-seam{
+    width: 50px;
+    height: 50px;
+    background-color: #e9f3ff; 
+    border-radius: 15px;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-box-box-seam i {
+    font-size: 25px;
+    color: #0d6efd;  
+}

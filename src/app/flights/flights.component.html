@@ -1,0 +1,90 @@
+<app-navbar></app-navbar>
+<div class="container card my-4">
+    <form [formGroup]="searchFlights">
+        <div class="radio-btns m-2">
+            <input type="radio" name="trip-way" formControlName="trip_way" value="Round Trip" id="round-trip" class="radio-btn">
+            <label for="round-trip" class="radio-labels">Round Trip</label>
+            <input type="radio" name="trip-way" formControlName="trip_way" value="One Way" id="one-way" class="radio-btn">
+            <label for="one-way" class="radio-labels">One Way</label>
+            <input type="radio" name="trip-way" formControlName="trip_way" value="Multi-city" id="multi-city" class="radio-btn">
+            <label for="multi-city" class="radio-labels">Multi-city</label>
+        </div>
+        <div class="d-flex flex-wrap">
+            <div class="check-in">
+                <label for="from">From</label>
+                <input type="text" name="from" formControlName="from" id="from" class="form-control">
+            </div>
+            <div class="check-in">
+                <label for="to">To</label>
+                <input type="text" name="to" formControlName="to" id="to" class="form-control">
+            </div>
+            <div class="check-in">
+                <label for="departure">Departure</label>
+                <input type="date" name="departure" formControlName="departure" id="departure" class="form-control">
+            </div>
+            <div class="check-in">
+                <label for="return">Return</label>
+                <input type="date" name="return" formControlName="return" id="return" class="form-control">
+            </div>
+            <div class="check-in">
+                <label for="passengers">Passengers</label>
+                <input type="text" name="passengers" formControlName="passengers" id="passengers" class="form-control">
+            </div>
+            <div class="check-in">
+                <button  class="btn btn-primary w-100" (click)="filterFlights()">Search</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+<div class="container flight-filter-container p-0">
+    <h2 class="p-0 m-0">4 Flights Available</h2>
+    <select class="form-select" name="flight-filter" id="flight-filter">
+        <option value="Best Match">Best Match</option>
+        <option value="Cheapest First">Cheapest First</option>
+        <option value="Fastest-First">Fastest-First</option>
+        <option value="Departure-Time">Departure-Time</option>
+    </select>
+</div>
+<div class="filtered-flights">
+    <div class="flight-card container" *ngFor="let x of Flights$">
+        
+        <div class="airline-info">
+            <div class="airline-logo fs-5">{{x.airlineLogo}}</div>
+            <div>
+                <p class="airline-name">{{x.airline}}</p>
+                <p class="flight-type">{{x.class}}</p>
+            </div>
+        </div>
+
+        
+        <div class="time-section">
+            <div class="departure">
+                <div class="departure-time">{{x.depart_time}}</div>
+                <div class="airport-code">{{x.from_code}}</div>
+                <div class="city-name">{{x.from_city}}</div>
+            </div>
+
+            <div class="duration">
+                <span class="duration-icon"><i class="bi bi-clock"></i></span>
+                <span class="duration-time">{{x.total_hours}}</span>
+                <span class="non-stop-badge">{{x.type}}</span>
+            </div>
+
+            <div class="arrival">
+                <div class="arrival-time">{{x.landing_time}}</div>
+                <div class="airport-code">{{x.to_code}}</div>
+                <div class="city-name">{{x.to_city}}</div>
+            </div>
+        </div>
+
+        
+        <div class="price-section">
+            <p class="price-label">From</p>
+            <p class="price-amount">${{x.price}}</p>
+            <p class="seats-left">{{x.seats_left}} seats left</p>
+            <button class="select-btn" (click)="GotoPayment(x.id,x.depart_date,x.price,x.depart_time,x.airline)">Select <i class="bi bi-arrow-right"></i></button>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,133 @@
+.search-hotels {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  width: 100%;
+}
+.hotels-cards{
+  width: 60rem;
+  border-radius: 15px;
+  height: 250px;
+}
+.hotels-cards:hover{
+   box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+.destination {
+  width: 45%;
+  margin: 8px;
+}
+
+.check-in, .check-out {
+  width: 20%;
+  margin: 8px;
+}
+
+.serachbtn {
+  width: 10%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+.rating-review, .details-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+
+.price-range-slider {
+  width: 100%;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 69, 0, 0.2);
+}
+
+.range-value input {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ff4500;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.range-bar-container {
+  position: relative;
+  height: 30px;
+}
+
+.range-bar {
+  position: absolute;
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  background: linear-gradient(90deg, #ff6600, #ffa500);
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.range-bar::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #ff6600;
+  box-shadow: 0 0 6px rgba(255, 69, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.range-bar::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  background: #ff6600;
+}
+
+.range-bar::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #ff6600;
+}
+.main-image{
+  width: 40%;
+  border-radius: 15px 5px 5px 15px;
+}
+
+.amenities-options p{
+  background-color: rgb(233, 89, 36);
+  border-radius: 15px;
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 12px;
+}
+
+.facility-badges {
+  display: flex;
+  gap: 10px; 
+}
+
+.badge-pill {
+  background-color: #ff8c5a;  
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 25px;  
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.gold-star {
+  color: #f5c518;   
+  font-size: 18px;  
+  
+}

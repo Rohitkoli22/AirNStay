@@ -1,0 +1,135 @@
+<app-navbar></app-navbar>
+<div class="container card my-4">
+    <div>
+        <form [formGroup]="searchHotel" class="search-hotels">
+            <input type="text" name="destination" formControlName="destination" class="form-control destination"
+                placeholder="Where are you going?">
+            <input type="date" name="check-in" formControlName="check_in" id="check-in" class="form-control check-in">
+            <input type="date" name="check-out" formControlName="check_out" id="check-out"
+                class="form-control check-out">
+            <button type="button" class="btn btn-primary serachbtn" (click)="FilteredHotels()">
+                <i class="bi bi-search mt-3 me-2"></i>Search
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="container d-flex my-4">
+    <div class="card my-3 w-25">
+        <div class="filter-heading d-flex flex-row mt-2 mx-3">
+            <h5 class="w-75 m-2">Filter</h5>
+            <h6 class="m-2">Clear</h6>
+        </div>
+
+        <div class="filter-options m-2">
+            <form [formGroup]="searchFilter">
+
+                
+                <div class="price-range-slider">
+                    <p class="range-value">
+                        <input type="text" readonly [value]="'$' + priceRange[0] + ' - $' + priceRange[1]" />
+                    </p>
+
+                    <div class="range-bar-container">
+                        <input type="range" min="130" max="1000" [value]="priceRange[0]"
+                            (input)="onPriceChange($event, 0)" class="range-bar" />
+                        <input type="range" min="130" max="1000" [value]="priceRange[1]"
+                            (input)="onPriceChange($event, 1)" class="range-bar" />
+                    </div>
+                </div>
+
+                
+
+                <div class="amenities my-2 p-1">
+                    <h5>Amenities</h5>
+                    <div class="list-group p-1">
+                        <label class="wifi my-1">
+                            <input class="form-check-input me-1" id="wifi" formControlName="wifi" type="checkbox"> Wifi
+                        </label>
+                        <label class="pool my-1">
+                            <input class="form-check-input me-1" id="pool" formControlName="pool" type="checkbox"> Pool
+                        </label>
+                        <label class="gym my-1">
+                            <input class="form-check-input me-1" id="gym" formControlName="gym" type="checkbox"> Gym
+                        </label>
+                        <label class="restaurant my-1">
+                            <input class="form-check-input me-1" id="restaurant" formControlName="restaurant"
+                                type="checkbox">
+                            Restaurant
+                        </label>
+                        <label class="spa my-1">
+                            <input class="form-check-input me-1" id="spa" formControlName="spa" type="checkbox"> Spa
+                        </label>
+                        <label class="parking my-1">
+                            <input class="form-check-input me-1" id="parking" formControlName="parking" type="checkbox">
+                            Parking
+                        </label>
+                        <label class="beach my-1">
+                            <input class="form-check-input me-1" id="beach" formControlName="beach" type="checkbox">
+                            Beach
+                        </label>
+                        <label class="bar my-1">
+                            <input class="form-check-input me-1" id="bar" formControlName="bar" type="checkbox"> Bar
+                        </label>
+                    </div>
+                </div>
+
+                <div class="star-rating">
+                    <h5>Star Rating</h5>
+                    <div class="list-group">
+                        <label class="my-1">
+                            <input class="form-check-input me-1" formControlName="five_star" type="checkbox"> 5+ Stars
+                        </label>
+                        <label class="my-1">
+                            <input class="form-check-input me-1" formControlName="four_star" type="checkbox"> 4+ Stars
+                        </label>
+                        <label class="my-1">
+                            <input class="form-check-input me-1" formControlName="three_star" type="checkbox"> 3+ Stars
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="card-container w-75">
+        <div class="card hotels-cards d-flex flex-row ms-3 my-3" *ngFor="let x of Hotels$">
+            <!-- <img [src]="x.main_headin_img" class="" alt="..." width="40%"
+                height="100%"> -->
+            <div class="main-image" style="background: url({{x.main_headin_img}}); background-size: cover;">
+
+            </div>
+            <div class="card-body">
+                <div class="start d-flex flex-row">
+                    <div class="name-place w-50">
+                        <h5 class="card-title">{{x.name}}</h5>
+                        <p><i class="bi bi-geo-alt mx-1"></i>{{x.city}}, {{x.country}}</p>
+                    </div>
+                    <div class="rating-review w-50">
+                        <h5 class="card-title"><i class="bi bi-star-fill gold-star mx-1"></i>{{x.average_rating | number: '1.1-1'}}</h5>
+                        <p>{{x.total_reviews}} reviews</p>
+                    </div>
+                </div>
+                <div class="middle">
+                    <!-- <div class="amenities-options d-flex flex-row">
+                        <p class="m-2" *ngFor="let i of x.itinerary">{{i}}</p>
+                    </div> -->
+                    <div class="facility-badges d-flex flex-row">
+                        <span class="badge-pill" *ngFor="let i of x.itinerary">{{i}}</span>
+                    </div>
+                </div>
+                <div class="end mt-5 d-flex flex-row">
+                    <div class="price w-50">
+                        <p class="m-0">Starting from</p>
+                        <p class="m-0"><strong class="text-primary fs-3">${{x.price_usd}}</strong>/night</p>
+                    </div>
+                    <div class="details-btn w-50">
+                        <button class="btn btn-primary mt-4" (click)="GotoHotelDetails(x.id)">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

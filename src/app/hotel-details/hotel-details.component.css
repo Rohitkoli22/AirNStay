@@ -1,0 +1,78 @@
+.main-image{
+    background: url("https://images.unsplash.com/photo-1551882547-ff40c63fe5fa");
+    height: 500px;
+    background-size: cover;
+    width: 70%;
+    border-radius: 20px;
+}
+.all-images{
+    height: 150px;
+    background-size: cover;
+    width: 48%;
+    border-radius: 20px;
+}
+.hotel-details-options{
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    justify-content: center;
+    height: fit-content;
+
+}
+.about-us{
+    justify-content: center;
+    margin-left: 1rem;
+}
+.hotel-details-options li{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    height: fit-content;
+}
+.Average-Rating-logo{
+    background-color: rgb(28, 28, 236);
+    width: 20%;
+    border-radius: 15%;
+    display: flex;
+    height: 65px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.review-rating-logo{
+    width: 40px;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+}
+.review-head{
+    justify-content: space-between;
+}
+.addreview-header{
+    width: 500px;
+    height: 400px;
+    background-image: url('https://thumbs.dreamstime.com/b/business-professional-analyzing-customer-reviews-five-star-rating-positive-feedback-digital-tablet-corporate-success-352293968.jpg');
+    background-size: cover;
+}
+
+
+.star-rating .star {
+  font-size: 28px;
+  color: #ccc;          
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, transform 0.2s;
+  padding: 2px;
+}
+
+.star-rating .star.filled {
+  color: gold;          
+}
+
+.star-rating .star:hover {
+  transform: scale(1.2);
+  color: gold;
+}

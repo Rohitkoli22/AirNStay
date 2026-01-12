@@ -1,0 +1,106 @@
+<app-navbar></app-navbar>
+<div class="start">
+    <h1>How Can We Help?</h1>
+    <p>Our support team is here to assist you 24/7. Choose your preferred method to get in touch.</p>
+</div>
+<div class="container-middle">
+    <div class="container-cards">
+        <div class="card" style="width: 25rem; height: 12rem;">
+            <div class="card-body text-center">
+                <div class="d-flex justify-content-center my-1">
+                    <div class="icon-wrapper-phone">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                </div>
+                <h5 class="card-title">Phone Support</h5>
+                <p class="text-primary"><b>+1 (555) 123-4567</b></p>
+                <p>Mon-Fri, 9am-6pm EST</p>
+            </div>
+        </div>
+        <div class="card" style="width: 25rem; height: 12rem;">
+            <div class="card-body text-center">
+                <div class="d-flex justify-content-center my-1">
+                    <div class="icon-wrapper-email">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                </div>
+                <h5 class="card-title">Email Support</h5>
+                <p class="card-text text-primary"><b>support@travelhub.com</b></p>
+                <p>Response within 24 hours</p>
+            </div>
+        </div>
+        <div class="card" style="width: 25rem; height: 12rem;">
+            <div class="card-body text-center">
+                <div class="d-flex justify-content-center my-1">
+                    <div class="icon-wrapper-LiveChat">
+                        <i class="bi bi-chat"></i>
+                    </div>
+                </div>
+                <h5 class="card-title">Live Chat</h5>
+                <p class="card-text text-primary"><b>Chat with us</b></p>
+                <p>Available 24/7</p>
+            </div>
+        </div>
+    </div>
+    <div class="FAQAndForm-Container p-3">
+        <div class="Form-container w-50 m-3 p-2 card">
+            <h4><i class="bi bi-send send-icon mx-2"></i>Send Us a Message</h4>
+            <form [formGroup]="supportForm" class="p-2" (submit)="addSupportTicketData()">
+                <label for="FullName" class="form-label">Full Name</label>
+                <input type="text" formControlName="fname" class="form-control">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" formControlName="email" class="form-control">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" formControlName="subject" class="form-control">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" formControlName="message" id="message" class="form-control"
+                    rows="4"></textarea>
+                <button type="submit" class="btn btn-primary mt-2 w-100">Send Message</button>
+            </form>
+        </div>
+        <div class="FAQ-container w-50 m-3 p-2 card">
+            <h4 class="mb-4"><i class="bi bi-question-circle help-icon mx-2"></i>Frequently Asked Questions</h4>
+            <!-- support.component.html -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item" *ngFor="let x of FAQs; let i = index">
+                    <h2 class="accordion-header" [attr.id]="'heading' + i">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            [attr.data-bs-target]="'#collapse' + i" [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                            [attr.aria-controls]="'collapse' + i">
+                            {{ x.question }}
+                        </button>
+                    </h2>
+
+                    <div [attr.id]="'collapse' + i" class="accordion-collapse collapse" [ngClass]="{ show: i === 0 }"
+                        [attr.aria-labelledby]="'heading' + i" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            {{ x.answer }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-end card">
+    <div class="support-details-heading">
+        <div class="d-flex justify-content-center my-1">
+            <div class="icon-wrapper-spportHours">
+                <i class="bi bi-clock"></i>
+            </div>
+        </div>
+        <h2 class="text-center">Support Hours</h2>
+        <p class="text-center">Our team is available to help you</p>
+    </div>
+    <div class="support-details-cards">
+        <div class="phone-email card w-25 m-3 p-3">
+            <h4 class="text-center">Phone & Email Support</h4>
+            <p class="text-center">Monday - Friday: 9am - 6pm EST</p>
+        </div>
+        <div class="phone-email card w-25 m-3 p-3">
+            <h4 class="text-center">Live Chat</h4>
+            <p class="text-center">24/7 - Always Available</p>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

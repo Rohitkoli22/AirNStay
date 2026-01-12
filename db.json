@@ -1,0 +1,1266 @@
+{
+  "Users": [
+    {
+      "id": "c516",
+      "first_name": "Rohit",
+      "last_name": "Koli",
+      "email": "rohit123@gmail.com",
+      "password": "12345678",
+      "role": "Traveler"
+    },
+    {
+      "id": "c0b5",
+      "first_name": "Pratibha",
+      "last_name": "Koli",
+      "email": "pratibha123@gmail.com",
+      "password": "123456789",
+      "role": "Traveler"
+    }
+  ],
+  "Hotels": [
+    {
+      "id": "H01",
+      "name": "The Oberoi Mumbai",
+      "city": "Mumbai",
+      "country": "India",
+      "average_rating": 4.333333333333333,
+      "total_reviews": 8421,
+      "itinerary": [
+        "Free WiFi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant",
+        "Spa",
+        "Bar"
+      ],
+      "highlights": [
+        "Hygiene Plus",
+        "920 meters to public transportation",
+        "Front desk [24-hour]",
+        "Airport transfer",
+        "Great Breakfast"
+      ],
+      "facilities": [
+        "Free Wi-Fi",
+        "Free parking",
+        "Front desk [24-hour]",
+        "Restaurant",
+        "Airport transfer",
+        "Kitchen",
+        "Luggage storage",
+        "Breakfast"
+      ],
+      "about_us": "The Oberoi Mumbai is a luxury 5-star hotel offering premium hospitality with stunning views of the Arabian Sea. Guests enjoy elegant rooms, fine dining, and exceptional service. Ideal for business and leisure travelers, the hotel ensures world-class comfort. Its prime location provides easy access to major attractions.",
+      "location": {
+        "lat": 18.9388,
+        "lng": 72.8258
+      },
+      "main_headin_img": "https://www.cardexpert.in/wp-content/uploads/2019/10/oberoi-mumbai-review.jpg",
+      "photos": [
+        "https://www.myboutiquehotel.com/photos/6857/the-oberoi-mumbai-mumbai-002-49856-1110x700.jpg",
+        "https://www.myboutiquehotel.com/photos/6857/the-oberoi-mumbai-mumbai-004-49856-1110x700.jpg",
+        "https://www.oberoihotels.com/-/media/Oberoi-Hotels/The-Oberoi-Mumbai/Room-and-Suites/premier-suite/overview-new/1863-Premier-Suite-Living-Room-The-Oberoi-Mumbai-1.png",
+        "https://tse3.mm.bing.net/th/id/OIP.hxAXMPH3_jGNsH2TeELTNgHaEK?pid=Api&P=0&h=180",
+        "https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/the-oberoi-mumbai/room-and-suites/premier-ocean-view-room/detail/2162-premier-ocean-view-room-twin-bed-the-oberoi-mumbai-1.jpg",
+        "https://www.myboutiquehotel.com/photos/6857/the-oberoi-mumbai-mumbai-006-49856-1110x700.jpg"
+      ],
+      "price_usd": 240
+    },
+    {
+      "id": "H02",
+      "name": "Taj Palace Delhi",
+      "city": "New Delhi",
+      "country": "India",
+      "average_rating": 3.2,
+      "total_reviews": 15234,
+      "itinerary": [
+        "Free WiFi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant",
+        "Spa",
+        "Bar"
+      ],
+      "highlights": [
+        "Hygiene Plus",
+        "920 meters to public transportation",
+        "Front desk [24-hour]",
+        "Airport transfer",
+        "Great Breakfast"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Free parking",
+        "Front desk [24-hour]",
+        "Restaurant",
+        "Airport transfer",
+        "Kitchen",
+        "Luggage storage",
+        "Breakfast"
+      ],
+      "about_us": "Taj Palace Delhi offers a blend of luxury and modern comfort. Known for its spacious rooms and award-winning restaurants, the hotel is a top choice for VIP guests. With lush gardens and exceptional hospitality, it guarantees a memorable stay. Its central location makes city travel convenient.",
+      "location": {
+        "lat": 28.5946,
+        "lng": 77.1734
+      },
+      "main_headin_img": "https://www.weddingsutra.com/images/taj-palace-01.jpg",
+      "photos": [
+        "https://ihpl.b-cdn.net/pictures/hotel/hotelgalleryn/taj-palace-hotel-new-delhi-3287-27.jpg",
+        "https://r1imghtlak.mmtcdn.com/56bcde0c789311eab2ab0242ac110002.jpg",
+        "https://www.thehotelguru.com/_images/ff/57/ff578f6a3f035a0cd80342e7302495b1/taj-palace-s1180x560.jpg",
+        "https://www.thehotelguru.com/_images/ea/fc/eafc64a6ce64ab5accaee11f2cbcd5e1/taj-palace-s1180x560.jpg",
+        "https://pix10.agoda.net/hotelImages/6608/0/332696b93900ae3e882bc298b17f2bdb.jpg?ca=7&ce=1&s=1024x768",
+        "http://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/taj-mahal-hotel-new-delhi-prod.jpg"
+      ],
+      "price_usd": 260
+    },
+    {
+      "id": "H03",
+      "name": "JW Marriott Bengaluru",
+      "city": "Bangalore",
+      "country": "India",
+      "average_rating": 4.166666666666667,
+      "total_reviews": 10450,
+      "itinerary": [
+        "Free WiFi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant",
+        "Spa",
+        "Bar"
+      ],
+      "highlights": [
+        "Hygiene Plus",
+        "920 meters to public transportation",
+        "Front desk [24-hour]",
+        "Airport transfer",
+        "Great Breakfast"
+      ],
+      "facilities": [
+        "Free Wi-Fi",
+        "Free parking",
+        "Front desk [24-hour]",
+        "Restaurant",
+        "Airport transfer",
+        "Kitchen",
+        "Luggage storage",
+        "Breakfast"
+      ],
+      "about_us": "JW Marriott Bengaluru combines elegance with premium comfort. The hotel features modern interiors, large rooms, and world-class dining. It is located near major business districts, making it ideal for corporate guests. The hospitality and amenities guarantee a luxurious stay.",
+      "location": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      },
+      "main_headin_img": "https://www.thrillophilia.com/blog/wp-content/uploads/2023/08/image1-1024x682.jpg",
+      "photos": [
+        "https://www.luxuryabode.com/blog/blogimages/JW-Marriott-Bengaluru5.jpg",
+        "https://cache.marriott.com/content/dam/marriott-renditions/BLRJW/blrjw-cubbon-suite-3304-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "https://cache.marriott.com/content/dam/marriott-renditions/BLRJW/blrjw-room-0042-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/07/06134240/Untitled-design-2023-07-06T134045.647-1600x900.jpg",
+        "https://www.travoh.com/wp-content/uploads/2021/12/002-JW-Marriott-Hotel-Bengaluru-Bengaluru-India-Hotel-Lobby-Lounge.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/413d4c158708615.63909389996fc.jpg"
+      ],
+      "price_usd": 220
+    },
+    {
+      "id": "H04",
+      "name": "The Leela Palace Jaipur",
+      "city": "Jaipur",
+      "country": "India",
+      "average_rating": 2.4,
+      "total_reviews": 7680,
+      "itinerary": [
+        "Free WiFi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant",
+        "Spa",
+        "Bar"
+      ],
+      "highlights": [
+        "Hygiene Plus",
+        "920 meters to public transportation",
+        "Front desk [24-hour]",
+        "Airport transfer",
+        "Great Breakfast"
+      ],
+      "facilities": [
+        "Free Wi-Fi",
+        "Free parking",
+        "Front desk [24-hour]",
+        "Restaurant",
+        "Airport transfer",
+        "Kitchen",
+        "Luggage storage",
+        "Breakfast"
+      ],
+      "about_us": "The Leela Palace Jaipur blends royal Rajasthani architecture with world-class luxury. Guests enjoy spacious rooms, premium dining, and warm hospitality. The property offers stunning palace-style decor, making it perfect for families and couples. The peaceful ambience enhances the overall experience.",
+      "location": {
+        "lat": 26.9124,
+        "lng": 75.7873
+      },
+      "main_headin_img": "https://luxurymywedding.com/img/hotel/18_23697.jpg",
+      "photos": [
+        "https://pix10.agoda.net/hotelImages/4990501/-1/4286dc9b8bd7ebaab82e11baaa165753.jpg?ca=28&ce=0&s=1024x768",
+        "https://www.theleela.com/prod/content/assets/styles/tl_1920_735/public/aio-banner/dekstop/royal-villa-pluge-pool-leela-jaipur-luxury-hotel.jpg?VersionId=3KwO.QKQafzVYi_q38UxnZPGQ6aGPsGL&itok=BfN2Lbhv",
+        "https://www.myeventz.co.in/public/uploads/venue_805/rooms_0/The%20Leela%20Palace%20Jaipur,%20Palace%20Rooms.jpg",
+        "https://images.trvl-media.com/hotels/22000000/21420000/21413500/21413414/aefbc5ec_z.jpg",
+        "https://www.staygrand.com/wp-content/uploads/2025/02/httpsassets.cntraveller.inphotos60ba253d7f89ba538d139a70masterw_16002Cc_limitRoyal-Villa-with-Courtyard-View-1.jpeg-1024x683.jpg",
+        "https://hiddendoorwaystravel.com/wp-content/uploads/2022/12/Terrace-The-Leela-Palce-Jaipur-1-1440x810.jpg"
+      ],
+      "price_usd": 280
+    },
+    {
+      "id": "H05",
+      "name": "Ritz Carlton Pune",
+      "city": "Pune",
+      "country": "India",
+      "average_rating": 2.6,
+      "total_reviews": 6234,
+      "itinerary": [
+        "Free WiFi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant",
+        "Spa",
+        "Bar"
+      ],
+      "highlights": [
+        "Hygiene Plus",
+        "920 meters to public transportation",
+        "Front desk [24-hour]",
+        "Airport transfer",
+        "Great Breakfast"
+      ],
+      "facilities": [
+        "Free Wi-Fi",
+        "Free parking",
+        "Front desk [24-hour]",
+        "Restaurant",
+        "Airport transfer",
+        "Kitchen",
+        "Luggage storage",
+        "Breakfast"
+      ],
+      "about_us": "Ritz Carlton Pune offers refined luxury with world-class facilities. Known for its spacious rooms, stylish decor, and gourmet dining, the hotel ensures an exceptional stay. Its strategic location in the IT hub makes it ideal for both business and leisure travelers.",
+      "location": {
+        "lat": 18.5204,
+        "lng": 73.8567
+      },
+      "main_headin_img": "https://www.travoh.com/wp-content/uploads/2021/12/004-The-Ritz-Carlton-Pune-Hotel-Maharashtra-India-Hotel-Tower-Aerial-View.jpg",
+      "photos": [
+        "https://s7d1.scene7.com/is/image/marriotts7prod/pnqrz-lobby-50685591:Wide-Hor?wid=2880&fit=constrain",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483531436.jpg?k=48cd2b53c101b3452affa4354463018c379411b3ff27642508763d5639f2708b&o=",
+        "https://www.hospitalitynet.org/picture/xxl_153107199.jpg?t=20191021151939",
+        "https://piainterior.com/wp-content/uploads/2022/12/The-Ritz-Carlton-Pune-India-10-1.jpg",
+        "https://thetravellertrails.in/wp-content/uploads/2019/10/Ritz-carlton-02.jpg",
+        "https://www.remotelands.com/travelogues/app/uploads/2019/03/Ritz-Carlton-pool.jpg"
+      ],
+      "price_usd": 300
+    },
+    {
+      "id": "H06",
+      "name": "Hyatt Regency Chennai",
+      "city": "Chennai",
+      "country": "India",
+      "average_rating": 4,
+      "total_reviews": 9120,
+      "itinerary": [
+        "Free WiFi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant",
+        "Spa",
+        "Bar"
+      ],
+      "highlights": [
+        "Hygiene Plus",
+        "920 meters to public transportation",
+        "Front desk [24-hour]",
+        "Airport transfer",
+        "Great Breakfast"
+      ],
+      "facilities": [
+        "Free Wi-Fi",
+        "Free parking",
+        "Front desk [24-hour]",
+        "Restaurant",
+        "Airport transfer",
+        "Kitchen",
+        "Luggage storage",
+        "Breakfast"
+      ],
+      "about_us": "Hyatt Regency Chennai offers contemporary luxury with spacious rooms and premium amenities. The hotel is centrally located, making it suitable for business and leisure stays. Guests enjoy gourmet dining, a relaxing spa, and excellent hospitality throughout their visit.",
+      "location": {
+        "lat": 13.0827,
+        "lng": 80.2707
+      },
+      "main_headin_img": "https://www.hyattdiningclub.com/assets/uploads/property/thumb_400/hotel_thumb_400_1627468463_128979.jpg",
+      "photos": [
+        "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2017/09/13/0910/Hyatt-Regency-Chennai-P038-Lobby.jpg/Hyatt-Regency-Chennai-P038-Lobby.16x9.jpg?imwidth=1280",
+        "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2017/09/13/1146/Hyatt-Regency-Chennai-P076-Presidential.jpg/Hyatt-Regency-Chennai-P076-Presidential.16x9.jpg?imwidth=1280",
+        "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2017/09/13/0910/Hyatt-Regency-Chennai-P042-Restaurant.jpg/Hyatt-Regency-Chennai-P042-Restaurant.16x9.jpg?imwidth=1280",
+        "https://hyatt-regency-chennai-hotel.at-hotels.com/data/Photos/OriginalPhoto/15174/1517495/1517495995.JPEG",
+        "https://tse4.mm.bing.net/th/id/OIP.r6RH_LpNMcrZqfnScQB1wwHaE7?pid=Api&P=0&h=180",
+        "https://hyatt-regency-chennai-hotel.at-hotels.com/data/Photos/OriginalPhoto/10065/1006571/1006571557.JPEG"
+      ],
+      "price_usd": 180
+    },
+    {
+      "id": "H07",
+      "name": "Novotel Hyderabad Airport",
+      "city": "Hyderabad",
+      "country": "India",
+      "average_rating": 3.4,
+      "total_reviews": 7850,
+      "itinerary": [
+        "Free WiFi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant",
+        "Spa",
+        "Bar"
+      ],
+      "highlights": [
+        "Hygiene Plus",
+        "920 meters to public transportation",
+        "Front desk [24-hour]",
+        "Airport transfer",
+        "Great Breakfast"
+      ],
+      "facilities": [
+        "Free Wi-Fi",
+        "Free parking",
+        "Front desk [24-hour]",
+        "Restaurant",
+        "Airport transfer",
+        "Kitchen",
+        "Luggage storage",
+        "Breakfast"
+      ],
+      "about_us": "Novotel Hyderabad Airport provides comfort and convenience for travelers. Featuring modern rooms, international cuisine, and premium security, the hotel is ideal for business trips. Its proximity to the airport makes it a preferred choice among transit passengers.",
+      "location": {
+        "lat": 17.385,
+        "lng": 78.4867
+      },
+      "main_headin_img": "https://www.ahstatic.com/photos/6687_ho_00_p_1024x768.jpg",
+      "photos": [
+        "https://www.ahstatic.com/photos/6687_ho_01_p_1024x768.jpg",
+        "https://www.ahstatic.com/photos/6687_rotwe_00_p_1024x768.jpg",
+        "https://imvoyager.com/wp-content/uploads/2018/05/IMG_20180519_112125.jpg",
+        "https://novotel-hyderabad-airport.hyderabad-hotel.com/data/Photos/OriginalPhoto/11463/1146323/1146323347/hyderabad-novotel-airport-photo-80.JPEG",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/06/71/02/novotel-hyderabad-airport.jpg?w=1200&h=-1&s=1",
+        "https://novotel-hyderabad-airport.hyderabad-hotel.com/data/Photos/OriginalPhoto/6527/652756/652756908.JPEG"
+      ],
+      "price_usd": 160
+    },
+    {
+      "id": "H08",
+      "name": "Radisson Blu Kochi",
+      "city": "Kochi",
+      "country": "India",
+      "average_rating": 3.4,
+      "total_reviews": 6520,
+      "itinerary": [
+        "Free WiFi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant",
+        "Spa",
+        "Bar"
+      ],
+      "highlights": [
+        "Hygiene Plus",
+        "920 meters to public transportation",
+        "Front desk [24-hour]",
+        "Airport transfer",
+        "Great Breakfast"
+      ],
+      "facilities": [
+        "Free Wi-Fi",
+        "Free parking",
+        "Front desk [24-hour]",
+        "Restaurant",
+        "Airport transfer",
+        "Kitchen",
+        "Luggage storage",
+        "Breakfast"
+      ],
+      "about_us": "Radisson Blu Kochi offers stylish accommodations with excellent dining options. Centrally located, it provides easy access to business centers and tourist attractions. Known for its warm hospitality, the hotel ensures a comfortable and memorable stay.",
+      "location": {
+        "lat": 9.9312,
+        "lng": 76.2673
+      },
+      "main_headin_img": "https://c.myholidays.com/blog/blog/content/images/2021/06/Radisson-Blu-Kochi.png",
+      "photos": [
+        "https://media.radissonhotels.net/image/radisson-blu-hotel-kochi/suite/16256-114070-f63656566_3xl.jpg?impolicy=Card",
+        "https://media.radissonhotels.net/image/radisson-blu-hotel-kochi/guest-room/16256-114070-f63656412_3xl.jpg",
+        "https://www.keralatourism.org/images/service-providers/photos/property-2268-Facilities-1385-20180616103010.jpg",
+        "https://cloud.tui.com/pics/hotel/resize:fill/aHR0cHM6Ly9waWNzLnR1aS5jb20vcGljcy9waWNzMTYwMHgxMjAwL3R1aS9jL2MxZTZjOWZiYjRhODc2NjdfNzlmNmY3MGYzZTY1Y2FlM2RhMzAwODNkM2U4ZTg3YTQuanBn",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/ef/a4/18/roof-top-high-bar.jpg?w=1200&h=-1&s=1",
+        "https://www.keralatourism.org/images/service-providers/photos/property-2268-Facilities-1381-20180616102753.jpg"
+      ],
+      "price_usd": 150
+    },
+    {
+      "id": "H09",
+      "name": "Taj Lake Palace Udaipur",
+      "city": "Udaipur",
+      "country": "India",
+      "average_rating": 2.2,
+      "total_reviews": 10450,
+      "itinerary": [
+        "Free WiFi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant",
+        "Spa",
+        "Bar"
+      ],
+      "highlights": [
+        "Hygiene Plus",
+        "920 meters to public transportation",
+        "Front desk [24-hour]",
+        "Airport transfer",
+        "Great Breakfast"
+      ],
+      "facilities": [
+        "Free Wi-Fi",
+        "Free parking",
+        "Front desk [24-hour]",
+        "Restaurant",
+        "Airport transfer",
+        "Kitchen",
+        "Luggage storage",
+        "Breakfast"
+      ],
+      "about_us": "Taj Lake Palace is one of India's most iconic luxury hotels, floating on Lake Pichola. Each room showcases royal architecture and breathtaking lake views. Guests enjoy unmatched hospitality, fine dining, and exclusive experiences. It is a perfect retreat for luxury seekers.",
+      "location": {
+        "lat": 24.5854,
+        "lng": 73.7125
+      },
+      "main_headin_img": "https://udaipurtourism.co.in/images/tourist-places/taj-lake-palace-udaipur/taj-lake-palace-udaipur-indian-tourism-location-address.jpg",
+      "photos": [
+        "https://tse3.mm.bing.net/th/id/OIP.KCj4ZyheRDTQxY1XVQGGFwHaDl?pid=Api&P=0&h=180",
+        "https://lostworld.com/media/30210/cq5damweb7567526.jpeg?anchor=center&mode=crop&width=750&height=450&rnd=132605926190000000",
+        "https://www.travelplusstyle.com/wp-content/gallery/taj-lake-palace-udaipur/jharokha-a-all-day-dining-4.jpg",
+        "https://milesopedia.com/wp-content/uploads/2021/06/taj-lake-palace-udaipur-1-3.jpg",
+        "https://yourislandsguide.com/wp-content/uploads/2019/11/taj-lake-palace-udaipur4-1.jpg",
+        "https://cdn.audleytravel.com/1400/1000/60/37887-lake-palace-hotel-udaipur.jpg"
+      ],
+      "price_usd": 350
+    },
+    {
+      "id": "H10",
+      "name": "Marriott Resort Goa",
+      "city": "Goa",
+      "country": "India",
+      "average_rating": 4.8,
+      "total_reviews": 9540,
+      "itinerary": [
+        "Free WiFi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant",
+        "Spa",
+        "Bar"
+      ],
+      "highlights": [
+        "Hygiene Plus",
+        "920 meters to public transportation",
+        "Front desk [24-hour]",
+        "Airport transfer",
+        "Great Breakfast"
+      ],
+      "facilities": [
+        "Free Wi-Fi",
+        "Free parking",
+        "Front desk [24-hour]",
+        "Restaurant",
+        "Airport transfer",
+        "Kitchen",
+        "Luggage storage",
+        "Breakfast"
+      ],
+      "about_us": "Marriott Resort Goa is a beachside luxury property offering serene views, premium amenities, and exceptional hospitality. Perfect for family vacations and romantic getaways, it features spacious rooms, delicious cuisine, and a relaxing ambience. Its waterfront location makes every stay memorable.",
+      "location": {
+        "lat": 15.4909,
+        "lng": 73.8278
+      },
+      "main_headin_img": "https://www.weddingsutra.com/images/Vendor_Images/Venues/Goa-Marriott-Resort/Goa-Marriott-Resort-Spa-05.jpg",
+      "photos": [
+        "https://r1imghtlak.ibcdn.com/5da96d7670aa11ee911e0a58a9feac02.png?&output-quality=75&downsize=520:350&crop=520:350;0,85&output-format=webp",
+        "https://www.weddingsutra.com/images/Vendor_Images/Venues/Goa-Marriott-Resort/Goa-Marriott-Resort-Spa-18.jpg",
+        "https://www.indovacations.net/hotels/images/hotel_marriott_resort_goa4.jpg",
+        "https://www.holidify.com/images/cmsuploads/compressed/163940147_20210122154400.jpg",
+        "https://ttgindia.2017.ttgasia.com/wp-content/uploads/sites/6/2025/06/St.-Regis-Goa-Resort_Presidential-Villa_640.jpg",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/8b/be/c2/grand-hyatt-goa.jpg?w=500&h=-1&s=1"
+      ],
+      "price_usd": 210
+    }
+  ],
+  "flights": [
+    {
+      "id": "1",
+      "airline": "Air India",
+      "airlineLogo": "AI",
+      "class": "Economy",
+      "from_city": "Mumbai",
+      "from_code": "BOM",
+      "to_city": "Delhi",
+      "to_code": "DEL",
+      "depart_date": "2025-10-15",
+      "depart_time": "06:30",
+      "landing_time": "08:45",
+      "total_hours": "2h 15m",
+      "type": "Non-stop",
+      "price": 78,
+      "seats_left": 25
+    },
+    {
+      "id": "2",
+      "airline": "IndiGo",
+      "airlineLogo": "6E",
+      "class": "Business",
+      "from_city": "Bengaluru",
+      "from_code": "BLR",
+      "to_city": "Kolkata",
+      "to_code": "CCU",
+      "depart_date": "2025-10-16",
+      "depart_time": "09:20",
+      "landing_time": "11:55",
+      "total_hours": "2h 35m",
+      "type": "Non-stop",
+      "price": 110,
+      "seats_left": 8
+    },
+    {
+      "id": "3",
+      "airline": "Vistara",
+      "airlineLogo": "UK",
+      "class": "First Class",
+      "from_city": "Delhi",
+      "from_code": "DEL",
+      "to_city": "Dubai",
+      "to_code": "DXB",
+      "depart_date": "2025-10-18",
+      "depart_time": "22:00",
+      "landing_time": "00:30",
+      "total_hours": "3h 30m",
+      "type": "Non-stop",
+      "price": 342,
+      "seats_left": 4
+    },
+    {
+      "id": "4",
+      "airline": "SpiceJet",
+      "airlineLogo": "SG",
+      "class": "Economy",
+      "from_city": "Chennai",
+      "from_code": "MAA",
+      "to_city": "Hyderabad",
+      "to_code": "HYD",
+      "depart_date": "2025-10-20",
+      "depart_time": "07:15",
+      "landing_time": "08:30",
+      "total_hours": "1h 15m",
+      "type": "Non-stop",
+      "price": 54,
+      "seats_left": 18
+    }
+  ],
+  "packages": [
+    {
+      "id": "1",
+      "title": "African Safari Adventure",
+      "tagLine": "Experience the wild heart of Africa",
+      "city": "Maasai Mara",
+      "country": "Kenya",
+      "daysAndNights": "7 Days / 6 Nights",
+      "averageReview": 4.8,
+      "totalReviews": 320,
+      "peopleRange": "2-6",
+      "packagesInclude": [
+        "Flights",
+        "Safari Lodges",
+        "All Meals",
+        "Game Drives"
+      ],
+      "pricePerPersonUSD": 2890
+    },
+    {
+      "id": "2",
+      "title": "Romantic Escape to Paris",
+      "tagLine": "Fall in love all over again in the city of lights",
+      "city": "Paris",
+      "country": "France",
+      "daysAndNights": "5 Days / 4 Nights",
+      "averageReview": 4.7,
+      "totalReviews": 410,
+      "peopleRange": "2-4",
+      "packagesInclude": [
+        "Flights",
+        "Luxury Hotel",
+        "Breakfast",
+        "City Tour"
+      ],
+      "pricePerPersonUSD": 2150
+    },
+    {
+      "id": "3",
+      "title": "Maldives Beach Getaway",
+      "tagLine": "Relax under the tropical sun and turquoise waters",
+      "city": "Malé",
+      "country": "Maldives",
+      "daysAndNights": "6 Days / 5 Nights",
+      "averageReview": 4.9,
+      "totalReviews": 285,
+      "peopleRange": "2-6",
+      "packagesInclude": [
+        "Flights",
+        "Overwater Villa",
+        "All Meals",
+        "Water Sports"
+      ],
+      "pricePerPersonUSD": 3400
+    },
+    {
+      "id": "4",
+      "title": "Explore the Wonders of Japan",
+      "tagLine": "A cultural journey from Tokyo to Kyoto",
+      "city": "Tokyo",
+      "country": "Japan",
+      "daysAndNights": "8 Days / 7 Nights",
+      "averageReview": 4.6,
+      "totalReviews": 390,
+      "peopleRange": "2-5",
+      "packagesInclude": [
+        "Flights",
+        "Hotels",
+        "All Meals",
+        "Guided Tours"
+      ],
+      "pricePerPersonUSD": 3100
+    },
+    {
+      "id": "5",
+      "title": "The Great American Road Trip",
+      "tagLine": "From coast to coast, discover America’s beauty",
+      "city": "Los Angeles",
+      "country": "USA",
+      "daysAndNights": "10 Days / 9 Nights",
+      "averageReview": 4.5,
+      "totalReviews": 275,
+      "peopleRange": "2-6",
+      "packagesInclude": [
+        "Car Rental",
+        "Hotels",
+        "Breakfast",
+        "Attraction Passes"
+      ],
+      "pricePerPersonUSD": 2700
+    },
+    {
+      "id": "6",
+      "title": "Magical Switzerland Escape",
+      "tagLine": "Snow-capped peaks and scenic train journeys",
+      "city": "Zurich",
+      "country": "Switzerland",
+      "daysAndNights": "6 Days / 5 Nights",
+      "averageReview": 4.8,
+      "totalReviews": 330,
+      "peopleRange": "2-5",
+      "packagesInclude": [
+        "Flights",
+        "Mountain Resort",
+        "All Meals",
+        "Train Pass"
+      ],
+      "pricePerPersonUSD": 3550
+    }
+  ],
+  "faqs": [
+    {
+      "id": "1",
+      "question": "How do I book a hotel, flight, or holiday package?",
+      "answer": "To book, simply search for your preferred hotel, flight, or package, select your travel dates, choose the option that suits your budget, and click 'Book Now'. Proceed with the payment to confirm your booking."
+    },
+    {
+      "id": "2",
+      "question": "Can I cancel or modify my booking after confirmation?",
+      "answer": "Yes, you can cancel or modify your booking by visiting the 'My Bookings' section. However, cancellation or modification charges may apply as per the hotel or airline policy."
+    },
+    {
+      "id": "3",
+      "question": "How long does it take to get a refund after cancellation?",
+      "answer": "Refunds are usually processed within 5 to 7 business days depending on the payment method and bank policies. You’ll receive an email notification once the refund is initiated."
+    },
+    {
+      "id": "4",
+      "question": "What payment options are available?",
+      "answer": "You can pay using Credit/Debit Cards, UPI, Net Banking, PayPal, Razorpay, or Stripe. EMI and wallet options may also be available for select bookings."
+    },
+    {
+      "id": "5",
+      "question": "How do I check my booking confirmation and itinerary?",
+      "answer": "After successful payment, you’ll receive a confirmation email and SMS with your booking details and itinerary. You can also view them anytime in the 'My Bookings' section."
+    },
+    {
+      "id": "6",
+      "question": "Can I make a booking for someone else using my account?",
+      "answer": "Yes, you can book for family members or friends using your account. Just make sure the traveler details (name, ID proof) are entered correctly during the booking process."
+    },
+    {
+      "id": "7",
+      "question": "What should I do if I don’t receive a booking confirmation email?",
+      "answer": "If you haven’t received a confirmation email within 10 minutes of booking, please check your spam or junk folder. If still not found, contact Customer Support through the 'Create Ticket' option."
+    }
+  ],
+  "SupportTicket": [
+    {
+      "id": "9805",
+      "fname": "Rohit Koli",
+      "email": "rohit123@gmail.com",
+      "subject": "not able book hotels",
+      "message": "not able to book mumbai location hotels."
+    },
+    {
+      "id": "cdc0",
+      "fname": "Pratibha Koli",
+      "email": "pratibha123@gmail.com",
+      "subject": "Hotel Booking Cancellation",
+      "message": "Not Able to Cancel Booking."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "rating": 5,
+      "hotelId": "H01",
+      "userName": "Rohit Koli",
+      "roomName": "Standard Room",
+      "travelMonth": "November 2025",
+      "detailedReview": "The hotel stay was extremely comfortable with very clean rooms. The staff provided quick service whenever needed. The breakfast buffet was delicious and offered multiple options. Overall, it was a pleasant and satisfying experience."
+    },
+    {
+      "id": "2",
+      "rating": 4,
+      "hotelId": "H02",
+      "userName": "Aarav Sharma",
+      "roomName": "Deluxe Suite",
+      "travelMonth": "October 2025",
+      "detailedReview": "The hotel atmosphere was relaxing and the staff were welcoming. The room had a great view and was well-maintained. Food service was timely with good taste. A very enjoyable stay overall."
+    },
+    {
+      "id": "3",
+      "rating": 3,
+      "hotelId": "H03",
+      "userName": "Priya Singh",
+      "roomName": "Executive Room",
+      "travelMonth": "September 2025",
+      "detailedReview": "The room was decent but could have been a bit cleaner. The facilities offered were acceptable for the price. Staff behavior was polite but service was slow. Overall, it was an average experience."
+    },
+    {
+      "id": "4",
+      "rating": 5,
+      "hotelId": "H04",
+      "userName": "Vikram Patel",
+      "roomName": "Premium Room",
+      "travelMonth": "August 2025",
+      "detailedReview": "Amazing hotel with exceptional service and top-notch cleanliness. The amenities were impressive and very well-maintained. Staff were friendly with professional behavior. Definitely a hotel worth recommending."
+    },
+    {
+      "id": "5",
+      "rating": 2,
+      "hotelId": "H05",
+      "userName": "Neha Gupta",
+      "roomName": "Standard Room",
+      "travelMonth": "July 2025",
+      "detailedReview": "The room was smaller than expected and not very clean. Service took longer than usual for basic needs. Breakfast options were limited and not very tasty. Overall, the stay was below average."
+    },
+    {
+      "id": "6",
+      "rating": 4,
+      "hotelId": "H06",
+      "userName": "Karan Verma",
+      "roomName": "Deluxe Room",
+      "travelMonth": "June 2025",
+      "detailedReview": "A very comfortable stay with peaceful surroundings. The room interior was modern and well-designed. Staff were supportive whenever help was needed. Would definitely consider staying again."
+    },
+    {
+      "id": "7",
+      "rating": 1,
+      "hotelId": "H07",
+      "userName": "Meera Joshi",
+      "roomName": "Basic Room",
+      "travelMonth": "May 2025",
+      "detailedReview": "The hotel experience was disappointing right from check-in. The room was unclean and had maintenance issues. Staff didn't respond on time and seemed unorganized. Not recommended at all."
+    },
+    {
+      "id": "8",
+      "rating": 5,
+      "hotelId": "H08",
+      "userName": "Sahil Kumar",
+      "roomName": "Premium Suite",
+      "travelMonth": "April 2025",
+      "detailedReview": "A luxury experience with top-class amenities and beautiful interior decoration. Staff hospitality was outstanding and they made the stay memorable. The food quality was excellent and served fresh. Highly recommended for a premium stay."
+    },
+    {
+      "id": "9",
+      "rating": 3,
+      "hotelId": "H09",
+      "userName": "Ananya Mehta",
+      "roomName": "Executive Room",
+      "travelMonth": "March 2025",
+      "detailedReview": "The room was decent but lacked proper ventilation. The staff tried their best to assist with the issues. Breakfast was okay but nothing special. A moderate experience overall."
+    },
+    {
+      "id": "10",
+      "rating": 4,
+      "hotelId": "H10",
+      "userName": "Ritesh Malhotra",
+      "roomName": "Deluxe Room",
+      "travelMonth": "February 2025",
+      "detailedReview": "The hotel provided a very comfortable and relaxing environment. Rooms were clean and equipped with necessary amenities. Staff were polite and quick to help. Overall, a very pleasant stay."
+    },
+    {
+      "id": "11",
+      "rating": 5,
+      "hotelId": "H01",
+      "userName": "Aditi Sharma",
+      "roomName": "Standard Room",
+      "travelMonth": "January 2025",
+      "detailedReview": "The stay was wonderful and the staff made sure everything was perfect. The room was spotless and had a calming ambiance. Breakfast had a great variety and everything tasted fresh. A memorable and pleasant experience overall."
+    },
+    {
+      "id": "12",
+      "rating": 2,
+      "hotelId": "H02",
+      "userName": "Rahul Nair",
+      "roomName": "Economy Room",
+      "travelMonth": "February 2025",
+      "detailedReview": "The room was not well-maintained and smelled damp. Service was delayed even for simple requests. The food options were very limited and not very appetizing. Overall, the stay did not meet expectations."
+    },
+    {
+      "id": "13",
+      "rating": 4,
+      "hotelId": "H03",
+      "userName": "Sneha Kapoor",
+      "roomName": "Deluxe Room",
+      "travelMonth": "March 2025",
+      "detailedReview": "The hotel was clean and the room felt spacious and well-lit. Staff were polite and quick to assist with queries. The food was flavorful and served warm. It was a comfortable and enjoyable stay overall."
+    },
+    {
+      "id": "14",
+      "rating": 3,
+      "hotelId": "H04",
+      "userName": "Aman Tiwari",
+      "roomName": "Suite Room",
+      "travelMonth": "April 2025",
+      "detailedReview": "The experience was decent but not too impressive. The room was okay but needed better maintenance. Staff behavior was good but service felt slow. A fine stay but could have been better."
+    },
+    {
+      "id": "15",
+      "rating": 1,
+      "hotelId": "H05",
+      "userName": "Kavya Mishra",
+      "roomName": "Standard Room",
+      "travelMonth": "May 2025",
+      "detailedReview": "The experience was disappointing from start to end. The room was dirty and the washroom was not properly cleaned. Staff were unresponsive and took too long to resolve issues. Would not recommend staying here again."
+    },
+    {
+      "id": "16",
+      "rating": 5,
+      "hotelId": "H06",
+      "userName": "Harsh Jain",
+      "roomName": "Premium Suite",
+      "travelMonth": "June 2025",
+      "detailedReview": "A truly premium experience with excellent service. The suite was luxurious and had beautiful decor. Staff went out of their way to provide assistance whenever needed. A perfect stay worth every penny."
+    },
+    {
+      "id": "17",
+      "rating": 4,
+      "hotelId": "H07",
+      "userName": "Divya Rai",
+      "roomName": "Executive Room",
+      "travelMonth": "July 2025",
+      "detailedReview": "The room was spacious and well-furnished, offering good comfort. The staff were friendly and ensured a smooth stay. Food was good with enough options to choose from. A pleasant and refreshing experience."
+    },
+    {
+      "id": "18",
+      "rating": 3,
+      "hotelId": "H08",
+      "userName": "Varun Yadav",
+      "roomName": "Economy Room",
+      "travelMonth": "August 2025",
+      "detailedReview": "An average stay with basic amenities sufficiently provided. The room was okay but felt a bit outdated. Staff were polite but not very proactive. Overall, a satisfactory experience but nothing exceptional."
+    },
+    {
+      "id": "19",
+      "rating": 2,
+      "hotelId": "H09",
+      "userName": "Simran Kaur",
+      "roomName": "Standard Room",
+      "travelMonth": "September 2025",
+      "detailedReview": "The room lacked cleanliness and the bedding did not seem fresh. Service was slow despite multiple reminders. Breakfast quality was below average with limited choices. The stay could have been managed much better."
+    },
+    {
+      "id": "20",
+      "rating": 5,
+      "hotelId": "H10",
+      "userName": "Nikhil Deshmukh",
+      "roomName": "Deluxe Suite",
+      "travelMonth": "October 2025",
+      "detailedReview": "A fantastic stay with excellent room ambiance and modern facilities. The hotel staff ensured all needs were met promptly. The food served was delicious and well-prepared. Truly a great experience worth recommending."
+    },
+    {
+      "id": "21",
+      "rating": 4,
+      "hotelId": "H01",
+      "userName": "Rohan Mehta",
+      "roomName": "Deluxe Room",
+      "travelMonth": "November 2025",
+      "detailedReview": "The hotel had a peaceful environment with clean surroundings. The room was well-organized and maintained properly. Staff were polite and attended requests quickly. A very comfortable and refreshing stay overall."
+    },
+    {
+      "id": "22",
+      "rating": 3,
+      "hotelId": "H02",
+      "userName": "Sanya Kapoor",
+      "roomName": "Standard Room",
+      "travelMonth": "October 2025",
+      "detailedReview": "The room was acceptable but lacked proper ventilation. Staff tried to help but responses were somewhat slow. Breakfast was average with limited items available. Overall, a moderate experience with room for improvement."
+    },
+    {
+      "id": "23",
+      "rating": 5,
+      "hotelId": "H03",
+      "userName": "Abhishek Sharma",
+      "roomName": "Premium Suite",
+      "travelMonth": "September 2025",
+      "detailedReview": "An exceptional stay with luxurious amenities and excellent service quality. The staff made sure every detail was taken care of. The room interior was beautiful and very spacious. Truly a delightful and unforgettable experience."
+    },
+    {
+      "id": "24",
+      "rating": 1,
+      "hotelId": "H04",
+      "userName": "Monika Jain",
+      "roomName": "Basic Room",
+      "travelMonth": "August 2025",
+      "detailedReview": "The room condition was terrible with several cleanliness issues. Staff seemed uninterested and did not respond on time. Breakfast was disappointing with stale items. Not a hotel I would ever consider again."
+    },
+    {
+      "id": "25",
+      "rating": 2,
+      "hotelId": "H05",
+      "userName": "Jay Patel",
+      "roomName": "Economy Room",
+      "travelMonth": "July 2025",
+      "detailedReview": "The experience was below average due to poor room maintenance. Staff tried to help but services were slow. Food options were very limited and lacked freshness. Overall, the stay did not meet expectations."
+    },
+    {
+      "id": "26",
+      "rating": 5,
+      "hotelId": "H06",
+      "userName": "Tanvi Kulkarni",
+      "roomName": "Luxury Suite",
+      "travelMonth": "June 2025",
+      "detailedReview": "A wonderful experience with elegant room design and spotless cleanliness. The staff were extremely courteous and attentive. The meals were delicious and served on time. Highly satisfying stay worth every moment."
+    },
+    {
+      "id": "27",
+      "rating": 4,
+      "hotelId": "H07",
+      "userName": "Kunal Shah",
+      "roomName": "Executive Room",
+      "travelMonth": "May 2025",
+      "detailedReview": "Comfortable stay with all essential amenities available. The staff were friendly and helpful throughout. The room had a good view and was nicely maintained. Overall, a pleasant and enjoyable experience."
+    },
+    {
+      "id": "28",
+      "rating": 3,
+      "hotelId": "H08",
+      "userName": "Isha Garg",
+      "roomName": "Deluxe Room",
+      "travelMonth": "April 2025",
+      "detailedReview": "The room was fine but could have been more spacious. Staff were respectful but service was a bit slow. Breakfast tasted okay but lacked variety. Overall, a decent stay with minor concerns."
+    },
+    {
+      "id": "29",
+      "rating": 2,
+      "hotelId": "H09",
+      "userName": "Amit Thakur",
+      "roomName": "Standard Room",
+      "travelMonth": "March 2025",
+      "detailedReview": "The room was not cleaned properly and lacked basic hygiene. It took multiple follow-ups to get assistance from the staff. Breakfast was very average and lacked flavor. The entire experience was underwhelming."
+    },
+    {
+      "id": "30",
+      "rating": 5,
+      "hotelId": "H10",
+      "userName": "Shreya Iyer",
+      "roomName": "Premium Suite",
+      "travelMonth": "February 2025",
+      "detailedReview": "An excellent stay with high-quality service and top-class comfort. The suite was beautifully furnished with all modern amenities. Staff ensured a smooth and pleasant experience throughout. Absolutely worth recommending."
+    },
+    {
+      "id": "31",
+      "rating": 3,
+      "hotelId": "H01",
+      "userName": "Pooja Sharma",
+      "roomName": "Standard Room",
+      "travelMonth": "January 2025",
+      "detailedReview": "The stay was okay with basic amenities provided. The cleanliness could have been better, especially in the washroom. The staff were helpful but a bit slow at times. Overall, a decent experience but nothing exceptional."
+    },
+    {
+      "id": "32",
+      "rating": 5,
+      "hotelId": "H02",
+      "userName": "Arjun Verma",
+      "roomName": "Premium Suite",
+      "travelMonth": "February 2025",
+      "detailedReview": "A fantastic stay with luxurious room furnishings and great ambiance. The staff were extremely polite and attentive throughout the visit. The food was delicious and served fresh every time. An overall wonderful experience worth every moment."
+    },
+    {
+      "id": "33",
+      "rating": 4,
+      "hotelId": "H03",
+      "userName": "Ritika Patil",
+      "roomName": "Deluxe Room",
+      "travelMonth": "March 2025",
+      "detailedReview": "The room was comfortable and had a cozy atmosphere. Staff were friendly and ensured quick service whenever needed. The breakfast was good with a fair amount of variety. Overall, a pleasant and satisfying stay."
+    },
+    {
+      "id": "34",
+      "rating": 2,
+      "hotelId": "H04",
+      "userName": "Aditya Singh",
+      "roomName": "Basic Room",
+      "travelMonth": "April 2025",
+      "detailedReview": "The room was not very clean and lacked proper maintenance. Several basic facilities were unavailable during the stay. The staff were polite but not very efficient. Overall, the stay felt below expectations."
+    },
+    {
+      "id": "35",
+      "rating": 5,
+      "hotelId": "H05",
+      "userName": "Neeraj Gupta",
+      "roomName": "Luxury Suite",
+      "travelMonth": "May 2025",
+      "detailedReview": "A truly luxurious experience with beautifully designed interiors. The staff ensured prompt service and made the stay memorable. The food was excellent and presented well. A stay that exceeded expectations in every way."
+    },
+    {
+      "id": "36",
+      "rating": 1,
+      "hotelId": "H06",
+      "userName": "Kritika Desai",
+      "roomName": "Economy Room",
+      "travelMonth": "June 2025",
+      "detailedReview": "The room was in poor condition with several cleanliness issues. Staff took too long to respond to basic requests. Breakfast was unappetizing and tasted stale. Overall, it was a disappointing experience."
+    },
+    {
+      "id": "37",
+      "rating": 4,
+      "hotelId": "H07",
+      "userName": "Suresh Pillai",
+      "roomName": "Executive Room",
+      "travelMonth": "July 2025",
+      "detailedReview": "The room was well-maintained and offered a good level of comfort. The staff were warm and welcoming throughout the stay. The food was tasty and served promptly. A pleasant stay with a few minor issues."
+    },
+    {
+      "id": "38",
+      "rating": 3,
+      "hotelId": "H08",
+      "userName": "Megha Jain",
+      "roomName": "Deluxe Room",
+      "travelMonth": "August 2025",
+      "detailedReview": "The room was average and could use some renovation. Staff were supportive but not very quick with requests. Breakfast options were limited though fresh. Overall, an acceptable stay for short trips."
+    },
+    {
+      "id": "39",
+      "rating": 2,
+      "hotelId": "H09",
+      "userName": "Rohit Malhotra",
+      "roomName": "Standard Room",
+      "travelMonth": "September 2025",
+      "detailedReview": "The room lacked proper hygiene and felt poorly maintained. Staff were not responsive enough to complaints. The food quality was below average and lacked flavor. The overall stay was not satisfactory."
+    },
+    {
+      "id": "40",
+      "rating": 5,
+      "hotelId": "H10",
+      "userName": "Shraddha Kulkarni",
+      "roomName": "Premium Suite",
+      "travelMonth": "October 2025",
+      "detailedReview": "A delightful stay with excellent room design and modern amenities. Staff were courteous and ensured a seamless experience. The food was fresh and well-prepared with good variety. A perfect and memorable stay overall."
+    },
+    {
+      "id": "41",
+      "rating": 4,
+      "hotelId": "H01",
+      "userName": "Aarav Mishra",
+      "roomName": "Executive Room",
+      "travelMonth": "January 2025",
+      "detailedReview": "The room was spacious and well-decorated with comfortable bedding. Staff were friendly and always ready to help with any request. The food served was flavorful and had good variety. Overall, a refreshing and satisfying stay."
+    },
+    {
+      "id": "42",
+      "rating": 2,
+      "hotelId": "H02",
+      "userName": "Neha Gupta",
+      "roomName": "Standard Room",
+      "travelMonth": "February 2025",
+      "detailedReview": "The stay was below average due to poor room conditions. Cleanliness was not up to the mark and required improvement. Staff were polite but not quick to respond. The overall experience was not very pleasant."
+    },
+    {
+      "id": "43",
+      "rating": 5,
+      "hotelId": "H03",
+      "userName": "Vikas Kumar",
+      "roomName": "Luxury Suite",
+      "travelMonth": "March 2025",
+      "detailedReview": "Everything about this stay was exceptional, from the room décor to the service quality. Staff were very attentive and made the experience enjoyable. The suite had excellent facilities and a great ambiance. A perfect and memorable stay."
+    },
+    {
+      "id": "44",
+      "rating": 1,
+      "hotelId": "H04",
+      "userName": "Priya Singh",
+      "roomName": "Basic Room",
+      "travelMonth": "April 2025",
+      "detailedReview": "The room was in bad condition with several issues that needed fixing. Cleanliness was lacking and made the stay uncomfortable. Staff did not respond promptly to concerns. Overall, a very disappointing experience."
+    },
+    {
+      "id": "45",
+      "rating": 3,
+      "hotelId": "H05",
+      "userName": "Rajat Sharma",
+      "roomName": "Deluxe Room",
+      "travelMonth": "May 2025",
+      "detailedReview": "The room was decent and had all the basic facilities needed. Service was fine but could have been faster. The food was average with limited selections. Overall, a moderate stay without major issues."
+    },
+    {
+      "id": "46",
+      "rating": 5,
+      "hotelId": "H06",
+      "userName": "Ishita Desai",
+      "roomName": "Premium Suite",
+      "travelMonth": "June 2025",
+      "detailedReview": "The suite offered a luxurious experience with beautiful interiors. Staff were extremely courteous and took great care of every detail. The meals were delicious and served with proper presentation. A highly enjoyable and relaxing stay."
+    },
+    {
+      "id": "47",
+      "rating": 4,
+      "hotelId": "H07",
+      "userName": "Gaurav Verma",
+      "roomName": "Executive Room",
+      "travelMonth": "July 2025",
+      "detailedReview": "The room was clean and comfortable with a nice layout. Staff were kind and made sure the stay went smoothly. The food was tasty and available in good variety. A pleasant experience overall."
+    },
+    {
+      "id": "48",
+      "rating": 3,
+      "hotelId": "H08",
+      "userName": "Nisha Kulkarni",
+      "roomName": "Economy Room",
+      "travelMonth": "August 2025",
+      "detailedReview": "The room was fine but lacked proper lighting. Staff service was okay but could be more proactive. Breakfast tasted decent but did not have many options. Overall, a fairly average stay."
+    },
+    {
+      "id": "49",
+      "rating": 2,
+      "hotelId": "H09",
+      "userName": "Rohan Sethi",
+      "roomName": "Standard Room",
+      "travelMonth": "September 2025",
+      "detailedReview": "The stay was not very comfortable due to poor room cleanliness. Several small issues were left unattended despite informing the staff. Food quality was unsatisfactory and lacked freshness. Not a pleasant experience overall."
+    },
+    {
+      "id": "50",
+      "rating": 5,
+      "hotelId": "H10",
+      "userName": "Ananya Rao",
+      "roomName": "Luxury Suite",
+      "travelMonth": "October 2025",
+      "detailedReview": "An amazing stay with top-class room facilities and excellent service. Staff were polite and ensured great comfort throughout the visit. The food was delightful and offered plenty of choices. A memorable and highly recommended experience."
+    },
+    {
+      "id": "1396",
+      "rating": 5,
+      "hotelId": "H01",
+      "userName": "Rohit Koli",
+      "roomName": "Standard Room",
+      "travelMonth": "November 2025",
+      "detailedReview": "Nice Hotel."
+    },
+    {
+      "id": "4c3c",
+      "rating": 4,
+      "hotelId": "H03",
+      "userName": "Pratibha",
+      "roomName": "Standard Room",
+      "travelMonth": "Dec 2025",
+      "detailedReview": "Good"
+    }
+  ],
+  "HotelBooking": [
+    {
+      "id": "4bf6",
+      "Customer_Id": "c516",
+      "Hotel_Id": "H02",
+      "Customer_Name": "RohitKoli",
+      "Card_User_Email": "rohit123@gmil.com",
+      "Room": "Standard Room",
+      "Guests": 2,
+      "Total_Rooms": 1,
+      "Check_In": "2025-12-04",
+      "Check_Out": "2025-12-07",
+      "Card_User": "Rohit Koli",
+      "Card_Number": 123456789,
+      "Card_Expiry_Date": "2030-01-01",
+      "Security_Code": 1234,
+      "Total_Nights": 3,
+      "Per_Night_Price": 260,
+      "Total": 754
+    },
+    {
+      "id": "ebc6",
+      "Customer_Id": "c0b5",
+      "Hotel_Id": "H03",
+      "Customer_Name": "PratibhaKoli",
+      "Card_User_Email": "pratibha123@gmail.com",
+      "Room": "Standard Room",
+      "Guests": 1,
+      "Total_Rooms": 1,
+      "Check_In": "2025-12-21",
+      "Check_Out": "2025-12-24",
+      "Card_User": "Pratibha",
+      "Card_Number": 12345678912,
+      "Card_Expiry_Date": "2030-01-01",
+      "Security_Code": 1234,
+      "Total_Nights": 3,
+      "Per_Night_Price": 220,
+      "Total": 638
+    }
+  ],
+  "FlightBooking": [
+    {
+      "id": "4bbc",
+      "customer_Id": "c516",
+      "flight_Id": "1",
+      "customer_Name": "RohitKoli",
+      "customer_Email": "rohit123@gmail.com",
+      "flight_Name": "Air India",
+      "total_Adults": 2,
+      "total_childs": 1,
+      "flight_Date": "2025-10-15",
+      "flight_Time": "06:30",
+      "card_User": "Rohit Koli",
+      "card_Number": 123456789,
+      "card_Email_User": "rohit123@gmail.com",
+      "card_Expiry_Date": "2030-01-01",
+      "security_Code": 1234,
+      "flight_price": "78",
+      "total": 187.2
+    }
+  ]
+}

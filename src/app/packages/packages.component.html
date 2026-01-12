@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<div class="main-packageHeading">
+    <h1>Vacation Packages</h1>
+    <p>Discover curated travel experiences with everything included. Flights, hotels, tours, and more.</p>
+</div>
+<div class="container container-card" >
+    <div class="card packages-card" *ngFor="let x of PackagesDetails">
+        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a" class="card-img-top" alt="..." width="35%" height="40%">
+        <div class="card-body">
+            <h5 class="card-title">{{x.title}}</h5>
+            <p class="card-text">{{x.tagLine}}</p>
+            <p>{{x.city}}, {{x.country}}</p>
+            <p>{{x.daysAndNights}}</p>
+            <hr>
+            <div class="reviews">
+                <p><strong>{{x.averageReview}}</strong> ({{x.totalReviews}} reviews)</p>
+                <p>{{x.peopleRange}} people</p>
+            </div>
+            <p>Package Includes:</p>
+            <div class="d-flex w-100">
+                <div class="itinerary" *ngFor="let i of x.packagesInclude">
+                   <p class="card p-1 m-1 w-100">{{i}}</p>
+                </div>
+            </div>
+            
+            <hr>
+            <div class="bottom">
+                <div class="price">
+                    <p>Starting from</p>
+                    <p><strong>${{x.pricePerPersonUSD}}</strong>/person</p>
+                </div>
+                <div class="detail-btn">
+                    <button class="btn btn-primary m-3">View Details</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,111 @@
+.start{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.start p{
+    width: 30%;
+    text-align: center;
+}
+
+.container-cards{
+        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        justify-content: space-evenly;
+}
+.container-cards > .card{
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.FAQAndForm-Container{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    
+}
+.FAQAndForm-Container > .card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.support-details-cards{
+    display: flex;
+    justify-content: center;
+  
+}
+.container-end{
+    margin: 80px;
+    padding: 10px;
+}
+
+.icon-wrapper-phone {
+  width: 60px;
+  height: 60px;
+  background-color: #e6f2ff; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper-phone i {
+  font-size: 28px;
+  color: #1976d2; 
+}
+
+.icon-wrapper-email {
+  width: 60px;
+  height: 60px;
+  background-color: #e6f2ff; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper-email i {
+  font-size: 28px;
+  color: #1976d2; 
+}
+
+.icon-wrapper-LiveChat {
+  width: 60px;
+  height: 60px;
+  background-color: #e6f2ff; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper-LiveChat i {
+  font-size: 28px;
+  color: #1976d2; 
+}
+
+.icon-wrapper-spportHours {
+  width: 60px;
+  height: 60px;
+  background-color: #e6f2ff; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper-spportHours i {
+  font-size: 28px;
+  color: #1976d2; 
+}
+
+.send-icon {
+  font-size: 20px;
+  color: #1976d2; 
+}
+
+.help-icon {
+  font-size: 24px;
+  color: #007bff;  
+}

@@ -1,0 +1,192 @@
+<app-navbar></app-navbar>
+<div *ngIf="role == 'traveler'">
+    <div class="container card user-info">
+        <div class="d-flex">
+            <div class="name-logo">
+                <p class="text-white fs-4">{{UserDetails[0].first_name[0]+UserDetails[0].last_name[0]}}</p>
+            </div>
+            <div class="p-0 mx-3">
+                <h2 class="p-0 m-0 text-2xl font-bold">{{UserDetails[0].first_name + " "+ UserDetails[0].last_name}}
+                </h2>
+                <p class="p-0 m-0 text-muted-foreground">{{UserDetails[0].email}}</p>
+                <div class="facility-badges d-flex flex-row my-2 p-0">
+                    <span class="badge-pill">{{UserDetails[0].role}}</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn setting m-2" (click)="SayId()"> <i class="bi bi-gear mx-1 me-3"></i>Settings</button>
+            <button class="btn logout m-2" (click)="LogOut()"><i
+                    class="bi bi-box-arrow-right mx-1 me-3"></i>Logout</button>
+        </div>
+    </div>
+    <div class="container my-2 p-0 user-travel-details d-flex flex-row">
+        <div class="card user-card">
+            <div class="card-start my-3 mx-3">
+                <div class="calendar-box">
+                    <i class="bi bi-calendar-event"></i>
+                </div>
+                <p class="mt-2">+12%</p>
+            </div>
+            <div class="card-middle mx-3">
+                <p class="w-50">Total Bookings</p>
+            </div>
+            <div class="card-end">
+                <h3 class="mx-3 w-50">25</h3>
+            </div>
+        </div>
+        <div class="card user-card">
+            <div class="card-start my-3 mx-3">
+                <div class="icon-box-airplane">
+                    <i class="bi bi-airplane"></i>
+                </div>
+                <p class="mt-2">+2%</p>
+            </div>
+            <div class="card-middle">
+                <p class="mx-3 w-50">Active Trps</p>
+            </div>
+            <div class="card-end">
+                <h3 class="mx-3 w-50">3</h3>
+            </div>
+        </div>
+        <div class="card user-card">
+            <div class="card-start my-3 mx-3">
+                <div class="icon-box-dollar">
+                    <i class="bi bi-currency-dollar"></i>
+                </div>
+                <p class="mt-2">+$2.3k</p>
+            </div>
+            <div class="card-middle">
+                <p class="mx-3 w-50">Total Spent</p>
+            </div>
+            <div class="card-end">
+                <h3 class="mx-3 w-50">$12,450</h3>
+            </div>
+        </div>
+        <div class="card user-card">
+            <div class="card-start mx-3 my-3">
+                <div class="icon-box-star">
+                    <i class="bi bi-star"></i>
+                </div>
+                <p class="mt-2">+1.2k</p>
+            </div>
+            <div class="card-middle">
+                <p class="mx-3 w-50">Loyalty Points</p>
+            </div>
+            <div class="card-end">
+                <h3 class="mx-3 w-50">8,420</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="search-hotels p-0">
+        <div class="btn-group" role="group">
+            <button type="button" class="btn-hotels"
+                [ngStyle]="{ 'background-color': selectedOption === 'hotels' ? 'white' : 'transparent' }"
+                (click)="selectedOption = 'hotels'">
+                My Bookings
+            </button>
+
+            <button type="button" class="btn-flights"
+                [ngStyle]="{ 'background-color': selectedOption === 'flights' ? 'white' : 'transparent' }"
+                (click)="selectedOption = 'flights'">
+                Upcoming Trips
+            </button>
+
+            <button type="button" class="btn-packages"
+                [ngStyle]="{ 'background-color': selectedOption === 'packages' ? 'white' : 'transparent' }"
+                (click)="selectedOption = 'packages'">
+                Travel History
+            </button>
+        </div>
+    </div>
+
+    <div class="container card my-2">
+        <h3 class="m-2">Recent Bookings</h3>
+        <div class="container card user-activity my-2">
+            <div class="d-flex">
+                <div class="icon-box-building my-3">
+                    <i class="bi bi-building"></i>
+                </div>
+                <div class="ms-2 my-2">
+                    <h5 class="m-0">Grand Plaza Hotel <span>confirmed</span></h5>
+                    <p class="m-0">New York, USA</p>
+                    <p class="m-0">Mar 15 - Mar 20, 2025</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-outline-primary">View Details</button>
+            </div>
+        </div>
+        <div class="container card user-activity my-2">
+            <div class="d-flex">
+                <div class="icon-box-airplane my-3">
+                    <i class="bi bi-airplane"></i>
+                </div>
+                <div class="ms-2 my-2">
+                    <h5 class="m-0">New York -> London <span>confirmed</span></h5>
+                    <p class="m-0">SkyWings Airlines</p>
+                    <p class="m-0">Mar 15, 2025</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-outline-primary">View Details</button>
+            </div>
+        </div>
+        <div class="container card user-activity my-2">
+            <div class="d-flex">
+                <div class="icon-box-box-seam my-3">
+                    <i class="bi bi-box-seam"></i>
+                </div>
+                <div class="ms-2 my-2">
+                    <h5 class="m-0">European Grand Tour <span>pending</span></h5>
+                    <p class="m-0">Multiple Cities</p>
+                    <p class="m-0">Apr 10 - Apr 24, 2025</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-outline-primary">View Details</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="role == 'admin'">
+    <div class="container card user-info">
+        <div class="d-flex">
+            <div class="name-logo">
+                <p class="text-white fs-4">{{UserDetails[0].first_name[0]+UserDetails[0].last_name[0]}}</p>
+            </div>
+            <div class="p-0 mx-3">
+                <h2 class="p-0 m-0 text-2xl font-bold">{{UserDetails[0].first_name + " "+ UserDetails[0].last_name}}
+                </h2>
+                <p class="p-0 m-0 text-muted-foreground">{{UserDetails[0].email}}</p>
+                <div class="facility-badges d-flex flex-row my-2 p-0">
+                    <span class="badge-pill">{{UserDetails[0].role}}</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn setting m-2" (click)="SayId()"> <i class="bi bi-gear mx-1 me-3"></i>Settings</button>
+            <button class="btn logout m-2" (click)="LogOut()"><i
+                    class="bi bi-box-arrow-right mx-1 me-3"></i>Logout</button>
+        </div>
+    </div>
+    <div class="container my-2 p-0 w-100">
+        <table class="w-100 text-center">
+            <th class="bg-primary">User</th>
+            <th class="bg-danger">Role</th>
+            <th class="bg-secondary">Action</th>
+            <tbody>
+                <td>Rohit Koli</td>
+                <td>Traveler</td>
+                <td>
+                    <button class="btn btn-primary m-1">Edit</button>
+                    <button class="btn btn-danger m-1">Delete</button>
+                </td>
+            </tbody>
+        </table>
+    </div>
+</div>
+<app-footer></app-footer>
